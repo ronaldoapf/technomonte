@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ATIVIDADES - TECHNOMONTE 2K19</title>
+
+    <link rel="shortcut icon" href="../assets/img/technomonte/logo_ico.ico"> <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="../assets/scripts/css/bootstrap.min.css"> <!-- CSS Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../assets/scripts/css/style.css">
+    <script src="https://kit.fontawesome.com/9bbf1f9f22.js"></script> <!-- Font Awesome -->
+    <script src="../assets/scripts/js/jquery.min.js"></script> <!-- Jquery -->
+    <script src="../assets/scripts/js/bootstrap.min.js"></script> <!-- JS Bootstrap -->
+    <script src="../assets/scripts/js/popper.min.js"></script> <!-- Popper -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-blue">
+        <a class="navbar-brand" href="../index.php">
+            <img src="../assets/img/technomonte/logoFundoEscuro.png" width="48" height="35" alt="Logo TECHNOMONTE">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.php">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle ativo" href="technomonte2k19.php" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Evento
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="technomonte2k19.php">Atividades previstas</a>
+                        <a class="dropdown-item" href="organizacao.php">Organização</a>
+                        <!--<a class="dropdown-item" href="#">Patrocínio</a>-->
+                        <a class="dropdown-item" href="submissao.php">Submissão de Trabalhos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inscricao.php">Inscrição</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="programacao.php">Programação</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="div-maratonas">
+            <div class="center">
+                <h2>Maratonas de Programação</h2>
+            </div>
+            <div class="center">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="../assets/img/technomonte/programacao.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="center">
+                        <div class="text">
+                            <h5>Maratona de Programação</h5>
+                            <p>
+                                Aquecimento: 03/10, 08h00 às 09h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
+                                Competição: 03/10, 09h00 às 12h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)<br>
+                                Aguarde mais informações!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="center">
+                        <div class="text">
+                            <h5>Maratona de Programação - Jovens Programadores</h5>
+                            <p>
+                                Aquecimento: 03/10, 07h15 às 08h15 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
+                                Competição: 03/10, 08h20 às 10h20 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)<br>
+                                Aguarde mais informações!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <center><h1 style="margin-bottom: 20px;">Eventos Importantes</h1></center>
+        <div class="accordion" id="accordionExample" style="margin-bottom: 20px;">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <h5>
+                                Palestra: A perícia computacional na Polícia Federal
+                            </h5>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <h4>Descrição:</h4>
+                                <p style="text-align: justify;">Na palestra será desvendado um pouco sobre a Perícia
+                                    Computacional na Polícia
+                                    Federal.
+                                    Processos, metodologias e ferramentas empregadas serão discutidas e oportunidades de
+                                    mercado e
+                                    passos para se tornar um Perito serão apresentados.</p>
+
+                            </li>
+
+                            <li>
+                                <h4>Ministrantes:</h4>
+                                <p>Gilson Marques da Silva</p>
+                            </li>
+                            <li>
+                                <h4>Minibiografia:</h4>
+                                <p style="text-align: justify;"> Gilson Marques da Silva é graduado em Ciência da
+                                    Computação (1998) pela UFU
+                                    (Universidade Federal de Uberlândia), especialista em Telecomunicações (1999) e em
+                                    Redes de computadores (2001), mestre em Ciência da Computação, com especialidade em
+                                    Segurança de Redes sem Fios (2005) também pela UFU.
+                                    Foi professor universitário na UFU entre 1998 e 2000 e na UNIMINAS entre 2002 e
+                                    2008.
+                                    Trabalhou com redes e serviços Internet na UFU entre 1998 e 2000. Atuou na Algar
+                                    Telecom, entre 2000 e 2009, com o foco em Segurança da Informação, Antifraude e
+                                    Garantia de Receita.
+                                    Atualmente é Perito Criminal Federal especializado na área de Computação Forense,
+                                    lotado na Polícia Federal em Uberlândia/MG e também é professor de Segurança da
+                                    Informação na Faculdade Pitágoras.
+                                    É autor dos livros “Segurança em Sistemas Linux” e “Segurança da Informação para
+                                    Leigos”.
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="radius-100">
+                            <center><img src="../assets/img/pessoas/gilson.jpeg" width="20%"></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h5>
+                                Minicurso: Introdução a Aprendizado de Máquina: modelos de classificação;
+                            </h5>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <h4>Descrição:</h4>
+                                <p style="text-align: justify;">
+                                    A proposta do minicurso é introduzir o conceito de extração de informação em dados
+                                    aplicando
+                                    técnicas computacionais baseadas em modelos estatísticos. Os modelos têm como
+                                    objetivo
+                                    encontrar padrões em um conjunto de dados e utilizar tais padrões para classificar
+                                    dados
+                                    futuros incertos. Para a parte prática será empregada uma base de dados pública e
+                                    real. O
+                                    minicurso será desenvolvido utilizando a linguagem Python. Para a análise dos dados,
+                                    extração
+                                    de informação e visualização serão utilizadas as bibliotecas Pandas, Scikit-learn e
+                                    Matplotlip.
+                                    Tudo isso será feito utilizando Jupyter, uma aplicação web de computação interativa.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Ministrante:</h4>
+                                <p>Pâmela Marinho Rezende</p>
+                            </li>
+
+                            <li>
+                                <h4>Minibiografia:</h4>
+                                <p style="text-align: justify;">
+                                    Bacharela em Ciência da Computação pela Universidade Federal de Lavras (2014) e
+                                    Mestra em Biotecnologia Vegetal pela Universidade Federal de Lavras (2017).
+                                    Atualmente é Doutoranda em Bioinformática da Universidade Federal de Minas Gerais,
+                                    trabalhando em colaboração com o Instituto René Rachou (Fiocruz Minas) e University
+                                    of Melbourne. Está se especializando nas áreas de Ciência de dados e Aprendizado de
+                                    Máquina, com foco em dados biológicos. Tem parcerias de trabalho com a Universidade
+                                    Federal de Lavras, Universidade Federal do Tocantins,
+                                    Embrapa Milho e Sorgo, e West Virginia University. Em paralelo fundadora e
+                                    webdesigner na empresa INUP, focada em consultoria e desenvolvimento de design em
+                                    sistemas web. É idealizadora e voluntária do projeto social Código X, que incentiva
+                                    meninas a optarem pela carreira tecnológica.
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="radius-100">
+                            <center><img src="../assets/img/pessoas/pamela.jpg" width="30%"></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h5>Workshop: Como aplicar o processo de UX no desenvolvimento de produtos digitais.</h5>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <h4>Descrição:</h4>
+                                <p style="text-align: justify;">
+                                    É um workshop voltado para o entendimento do processo de
+                                    UX Design de forma dinâmica
+                                    e objetiva. Não é focado na utilização de softwares ou na criação de interfaces, e
+                                    sim no desenvolvimento de produtos colocando o usuário centrado na solução.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Ministrante:</h4>
+                                <p style="text-align: justify;">
+                                    Rafael Siqueira (CEO e Foundador do Estúdio FLOW)
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Minibiografia:</h4>
+                                <p style="text-align: justify;">
+                                    É especialista em User Experience (UX) e atua na área de UX e UI há 11 anos. É
+                                    gestor da equipe de experiência do usuário no Estúdio FLOW, onde desenvolvem todo o
+                                    processo de UX e UI de projetos digitais. Já atuou em grandes projetos como XP
+                                    Investimentos, Globo, Natura, Guide entre outros... Sempre usando metodologias ágeis
+                                    como Lean UX, Design sprints e Design Thinking.
+                                </p>
+                            </li>
+
+                            <div class="radius-100">
+                                <center><img src="../assets/img/pessoas/rafael.jpg" width="30%"></center>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<br><br>
+
+    <div class="container" style="margin-bottom:20px;">
+        <div class="row">
+            <div class="col-6 text-center">
+                <h5>Realização:</h5>
+                <img src="../assets/img/technomonte/realizacao.png" width="70%">
+            </div>
+
+            <div class="col-6 text-center">
+                <h5>Apoio:</h5>
+                <img src="../assets/img/technomonte/apoio.png" width="90%">
+            </div>
+        </div>
+    </div>
+	
+    <div class="footer">
+        <div class="text">
+            <h3>CONTATOS</h3><br><br>
+            <p>
+                Endereços:
+
+                <br>
+
+                UFU CAMPUS MONTE CARMELO - <a
+                    href="https://www.google.com.br/maps/place/UFU+-+Unidade+Araras/@-18.7238275,-47.5262734,17z/data=!3m1!4b1!4m5!3m4!1s0x94a588cdb71f3513:0x49e70536bad58c20!8m2!3d-18.7238275!4d-47.5240847"
+                    target="“_blank”"> km 1, LMG-746, Monte Carmelo - MG</a>
+
+                <br>
+                UNIFUCAMP - <a
+                    href="https://www.google.com.br/maps/place/Fucamp+-+Monte+Carmelo/@-18.7376963,-47.5151771,15z/data=!4m5!3m4!1s0x0:0xa035303f8b80ff8d!8m2!3d-18.7376963!4d-47.5151771"
+                    target="“_blank”">Av. Brasil Oeste, s/n - Jardim Zenith II, Monte Carmelo - MG</a>
+
+                <br>
+                Email:<a href="mailto:contato@technomonte.com.br" target="_top"> contato@technomonte.com.br</a>
+            </p>
+
+            <div class="footer-redes-sociais">
+                <a href="https://www.facebook.com/technomonte" class="fab fa-facebook" target="_blank"> </a>
+
+                <a href="https://www.instagram.com/technomonte/" class="fab fa-instagram" target="_blank"></a>
+
+                <a href="https://twitter.com/technomonte" class="fab fa-twitter-square" target="_blank"> </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
