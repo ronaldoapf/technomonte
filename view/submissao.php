@@ -10,8 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="../assets/scripts/css/bootstrap.min.css"> <!-- CSS Bootstrap -->
     <link rel="stylesheet" type="text/css" href="../assets/scripts/css/style.css">
-    <script src="https://kit.fontawesome.com/9bbf1f9f22.js"></script> <!-- Font Awesome -->
-    <script src="../assets/scripts/js/jquery.min.js"></script> <!-- Jquery -->
+    <script src="../assets/scripts/js/fontawesome.js"></script> <!-- Font Awesome -->    <script src="../assets/scripts/js/jquery.min.js"></script> <!-- Jquery -->
     <script src="../assets/scripts/js/bootstrap.min.js"></script> <!-- JS Bootstrap -->
     <script src="../assets/scripts/js/popper.min.js"></script> <!-- Popper -->
 </head>
@@ -33,9 +32,8 @@
                     <a class="nav-link" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle ativo" href="submissao.php"
-                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle ativo" href="submissao.php" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Evento
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -51,6 +49,15 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="programacao.php">Programação</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="technomonte2k19.php" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Edições Anteriores
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" target="_blank" href="https://www.technomonte.com.br/2018">2018</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -231,15 +238,13 @@
                 </div>
                 <br>
                 <div class="col-12">
-                    <h5><a target="_blank"
-                            href="../assets/mostra/editaltechnomonte2019.pdf">Edital em
+                    <h5><a target="_blank" href="../assets/mostra/editaltechnomonte2019.pdf">Edital em
                             PDF</a></h5>
                 </div>
 
                 <div class="col-12">
                     <h5>
-                        <a target="_blank"
-                            href="../assets/mostra/modelo-poster-technomonte_2019.pptx">Modelo
+                        <a target="_blank" href="../assets/mostra/modelo-poster-technomonte_2019.pptx">Modelo
                             do
                             pôster</a>
                     </h5>
@@ -276,29 +281,49 @@
                     <h5>Visite nossos patrocinadores:</h5>
                 </center>
             </div>
-            <div class="col-2">
-                <a target="_blank" href="https://www.alliancemonte.com"><img
-                        src="../assets/img/patrocinadores/alliance.png" alt=""></a>
+            <div class="col-3">
             </div>
-            <div class="col-2">
-                <a target="_blank" href="https://www.criartgrafica.com.br"><img
-                        src="../assets/img/patrocinadores/criart.png" alt=""></a>
+            <div class="col-2 d-flex justify-content-center">
+                <a target="_blank" href="https://www.alliancemonte.com">
+                    <img src="../assets/img/patrocinadores/alliance.png" style="width: 80%;" alt="">
+                </a>
             </div>
 
-            <div class="col-2">
+            <div class="col-2 d-flex justify-content-cente">
+                <img src="../assets/img/patrocinadores/ortodontic.png" style="width: 80%;" alt="">
+            </div>
+
+
+            <div class="col-2 d-flex justify-content-cente">
+                <img src="../assets/img/patrocinadores/posto_santarita.jpg" style="width: 80%;" alt="">
+            </div>
+            <div class="col-3">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="patrocinadores">
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-2 d-flex align-items-center">
+                <a target="_blank" href="https://www.criartgrafica.com.br">
+                    <img src="../assets/img/patrocinadores/criart.png" alt="">
+                </a>
+            </div>
+
+            <div class="col-2 d-flex align-items-center">
+                <a target="_blank" href="https://www.sygmasistemas.com.br">
+                    <img src="../assets/img/patrocinadores/sygma.png" alt="">
+                </a>
+            </div>
+
+            <div class="col-2 d-flex align-items-center">
                 <img src="../assets/img/patrocinadores/monteccer.png" alt="">
             </div>
 
-            <div class="col-2">
-                <img src="../assets/img/patrocinadores/ortodontic.png" alt="">
-            </div>
-
-            <div class="col-2">
-                <a target="_blank" href="https://www.sygmasistemas.com.br"><img
-                        src="../assets/img/patrocinadores/sygma.png" alt=""></a>
-            </div>
-            <div class="col-2">
-                <img src="../assets/img/patrocinadores/posto_santarita.jpg" alt="">
+            <div class="col-3">
             </div>
         </div>
     </div>
