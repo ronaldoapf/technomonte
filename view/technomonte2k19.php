@@ -56,6 +56,89 @@
 
     <div class="container">
         <div class="div-maratonas">
+
+        
+        <div class="row">
+            <div class="col-12">
+                <div class="center" style="margin-bottom:20px; margin-top: 20px;">
+                    <center><h1>Maratona de Programação</h1></center>
+                </div>
+            </div>
+
+            <div class="col-12" style="margin-bottom: 20px;">
+                <center>
+                    <img src="../assets/img/technomonte/programacao.png" alt="">
+                </center>
+            </div>
+
+            <div class="col-12" style="margin-bottom: 20px;">
+                <center><h2 style="margin-bottom: 20px;">Jovens Programadores</h2></center>
+                <ul>
+                    <li>
+                        Aquecimento: 03/10, 08h00 às 09h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
+                    </li>
+
+                    <li>
+                        Competição: 03/10, 09h00 às 12h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
+                    </li>
+                    <li>
+                        Aguarde mais informações!
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12">
+                <center><h2 style="margin-bottom: 20px;">Universitários</h2></center>    
+                <ul>
+                    <li>
+                        Horário de início e término do aquecimento: 08:00 às 08:45
+                    </li>
+
+                    <li>
+                        Horário de início e término da maratona: 09:00 às 12:00
+                    </li>
+                    <li>
+                        Regras de participação:
+                        <ul>
+                            <li>
+                                As inscrições são individuais;
+                            </li>
+                            <li>
+                                As soluções devem ser escritas em uma das seguintes linguagens de programação: C/C++ e
+                                Java;
+                            </li>
+
+                            <li>
+                                As inscrições devem ser feitas até o dia 27/09/19;
+                            </li>
+
+                            <li>
+                                Todos os maratonistas deverão ser estudantes de uma instituição de ensino reconhecia
+                                pelo MEC. O comprovante (documento de identificação pessoal, com foto recente) deverá
+                                ser apresentado no dia da maratona;
+                            </li>
+
+                            <li>
+                                A falta de um documento de identificação pessoal poderá levar à não-permissão do
+                                participante na maratona. Não serão admitidas fotocópias, somente documentos originais.
+                            </li>
+
+                            <li>
+                                Será permitido o uso de material impresso durante a maratona somente para fins de
+                                consulta.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <!--    <div class="div-maratonas">
             <div class="center">
                 <h2>Maratonas de Programação</h2>
             </div>
@@ -72,10 +155,10 @@
                         <div class="text">
                             <h5>Maratona de Programação</h5>
                             <p>
-                                Aquecimento: 03/10, 08h00 às 09h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
+                                Aquecimento: 03/10, 08h00 às 08h45 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
                                 Competição: 03/10, 09h00 às 12h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)<br>
                                 Aguarde mais informações!
-                            </p>
+                            </p> 
                         </div>
                     </div>
                 </div>
@@ -93,9 +176,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
-        <center><h1 style="margin-bottom: 20px;">Eventos Importantes</h1></center>
+        <center>
+            <h1 style="margin-bottom: 20px;">Eventos Importantes</h1>
+        </center>
+        <!-- Primeiro Colapse -->
         <div class="accordion" id="accordionExample" style="margin-bottom: 20px;">
             <div class="card">
                 <div class="card-header" id="headingOne">
@@ -154,13 +240,15 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Segundo Colapse -->
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <h5>
-                                Minicurso: Introdução a Aprendizado de Máquina: modelos de classificação;
+                                Minicurso: Introdução a Aprendizado de Máquina: modelos de classificação
                             </h5>
                         </button>
                     </h2>
@@ -189,7 +277,7 @@
 
                             <li>
                                 <h4>Ministrante:</h4>
-                                <p>Pâmela Marinho Rezende</p>
+                                <p>Pâmela Marinho Rezende.</p>
                             </li>
 
                             <li>
@@ -215,16 +303,123 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Terceiro Colapse -->
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <h5>Workshop: Como aplicar o processo de UX no desenvolvimento de produtos digitais.</h5>
+                            <h5>
+                                Minicurso: Conhecendo React
+                            </h5>
                         </button>
                     </h2>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <h4>Descrição:</h4>
+                                <p style="text-align: justify;">
+                                    Nesse minicurso sobre react iremos montar uma aplicação do zero para compreender o
+                                    ecossistema da aplicação e seu ciclo de vida.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Ministrante:</h4>
+                                <p>Leandro Queiroz de Oliveira (Frontend Sênior / Tech Leader na Zup IT).</p>
+                            </li>
+
+                            <li>
+                                <h4>Minibiografia:</h4>
+                                <p style="text-align: justify;">
+                                    Formado em Engenharia da Computação. Desenvolvedor fullstack especialista em
+                                    javascript. Atuando como líder técnico frontend da area de P&D/Produtos ZUP.
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="radius-100">
+                            <center><img src="../assets/img/pessoas/leandro.jpeg" width="20%"></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quarto Colapse -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h5>
+                                Minicurso: Realidade Realidade Aumentada Aplicada à Otimização de Espaços Residenciais
+                            </h5>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <h4>Descrição:</h4>
+                                <p style="text-align: justify;">
+                                    Serão abordados conceitos básicos de Realidade Aumentada, áreas de aplicações e o
+                                    futuro da tecnologia. Iremos desenvolver uma aplicação demonstração para
+                                    customização de espaços residenciais, com funcionalidades de posicionamento de
+                                    móveis e alteração das cores.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Ministrante:</h4>
+                                <p>Camilo de Lellis Barreto Junior.</p>
+                            </li>
+
+                            <li>
+                                <h4>Minibiografia:</h4>
+                                <p style="text-align: justify;">
+                                    Mestre em ciências pelo programa de Pós-Graduação em Engenharia Elétrica da
+                                    Universidade Federal de Uberlândia com ênfase em Realidade Virtual para sistemas
+                                    críticos de energia elétrica. Especialista em modelagem 3D, criação de ambientes
+                                    virtuais e modelagem paramétrica.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>
+                                    Pré-Requisitos:
+                                </h4>
+                                <ul>
+                                    <li>
+                                        Noções em programação orientada a objetos (C#, C++, Java, Python)
+                                    </li>
+                                    <li>
+                                        Possuir um smartphone com câmera e SO Android;
+                                    </li>
+                                    <li>
+                                        Cabo USB para conexão entre PC e smartphone;
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="radius-100">
+                            <center><img src="../assets/img/pessoas/camilo.gif" width="20%"></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Quinto Colapse -->
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <h5>Workshop: Como aplicar o processo de UX no desenvolvimento de produtos digitais.</h5>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                     <div class="card-body">
                         <ul>
                             <li>
@@ -264,8 +459,8 @@
             </div>
         </div>
     </div>
-	
-	<br><br>
+
+    <br><br>
 
     <div class="container" style="margin-bottom:20px;">
         <div class="row">
@@ -280,7 +475,7 @@
             </div>
         </div>
     </div>
-	
+
     <div class="footer">
         <div class="text">
             <h3>CONTATOS</h3><br><br>
