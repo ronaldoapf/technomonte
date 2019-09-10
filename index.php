@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-blue">
         <a class="navbar-brand" href="index.php">
             <img src="assets/img/technomonte/logoFundoEscuro.png" width="48" height="35" alt="Logo TECHNOMONTE">
