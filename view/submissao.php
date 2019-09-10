@@ -1,50 +1,56 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)https://www.technomonte.com.br/view/submissao.php -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html>
+
+<head>
+    <meta charset="utf-8">
+
     <title>SUBMISSÃO DE TRABALHOS - TECHNOMONTE 2K19</title>
-    <link rel="shortcut icon" href="https://www.technomonte.com.br/assets/img/technomonte/logo_ico.ico"> <!-- Icon -->
+    <link rel="shortcut icon" href="../assets/img/technomonte/logo_ico.ico"> <!-- Icon -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="./submissao_files/bootstrap.min.css"> <!-- CSS Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="./submissao_files/style.css">
-    <script src="./submissao_files/9bbf1f9f22.js.download"></script><link rel="stylesheet" href="./submissao_files/free.min.css" media="all"> <!-- Font Awesome -->
-    <script src="./submissao_files/jquery.min.js.download"></script> <!-- Jquery -->
-    <script src="./submissao_files/bootstrap.min.js.download"></script> <!-- JS Bootstrap -->
-    <script src="./submissao_files/popper.min.js.download"></script> <!-- Popper -->
+    <link rel="stylesheet" type="text/css" href="../assets/scripts/css/bootstrap.min.css"> <!-- CSS Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../assets/scripts/css/style.css">
+    <script src="https://kit.fontawesome.com/9bbf1f9f22.js"></script> <!-- Font Awesome -->
+    <script src="../assets/scripts/js/jquery.min.js"></script> <!-- Jquery -->
+    <script src="../assets/scripts/js/bootstrap.min.js"></script> <!-- JS Bootstrap -->
+    <script src="../assets/scripts/js/popper.min.js"></script> <!-- Popper -->
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-blue">
-        <a class="navbar-brand" href="https://www.technomonte.com.br/index.php">
-            <img src="./submissao_files/logoFundoEscuro.png" width="48" height="35" alt="Logo TECHNOMONTE">
+        <a class="navbar-brand" href="../index.php">
+            <img src="../assets/img/logoFundoEscuro.png" width="48" height="35" alt="Logo TECHNOMONTE">
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.technomonte.com.br/index.php">Home</a>
+                    <a class="nav-link" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle ativo" href="https://www.technomonte.com.br/view/submissao.php#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle ativo" href="submissao.php"
+                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         Evento
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="https://www.technomonte.com.br/view/technomonte2k19.php">Atividades previstas</a>
-                        <a class="dropdown-item" href="https://www.technomonte.com.br/view/organizacao.php">Organização</a>
+                        <a class="dropdown-item" href="technomonte2k19.php">Atividades previstas</a>
+                        <a class="dropdown-item" href="organizacao.php">Organização</a>
                         <!--<a class="dropdown-item" href="#">Patrocínio</a>-->
-                        <a class="dropdown-item" href="https://www.technomonte.com.br/view/submissao.php">Submissão de Trabalhos</a>
+                        <a class="dropdown-item" href="submissao.php">Submissão de
+                            Trabalhos</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.technomonte.com.br/view/inscricao.php">Inscrição</a>
+                    <a class="nav-link" href="inscricao.php">Inscrição</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.technomonte.com.br/view/programacao.php">Programação</a>
+                    <a class="nav-link" href="programacao.php">Programação</a>
                 </li>
             </ul>
         </div>
@@ -91,7 +97,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-            <div style="margin-top: 20px; margin-bottom: 40px;">
+                <div style="margin-top: 20px; margin-bottom: 40px;">
                     <div class="col-12 text-center about-title">
                         <h3>
                             Edital da Mostra de Trabalhos TECHNOMONTE 2K19
@@ -165,13 +171,15 @@
                         2.5. Cada estudante poderá inscrever apenas um trabalho.</p>
                     <p style="text-align: justify;">
                         2.6. O estudante que pretende submeter trabalho deverá realizar a sua inscrição no
-                        evento até o dia 25/09, no site <a href="https://www.technomonte.com.br/">https://www.technomonte.com.br</a>.
+                        evento até o dia 25/09, no site <a
+                            href="https://www.technomonte.com.br/">https://www.technomonte.com.br</a>.
                     </p>
                     <p style="text-align: justify;">
                         2.7. Além do preenchimento dos dados do formulário e do resumo do trabalho,
                         deverá ser anexado um arquivo em formato PDF, contendo o pôster para
                         apresentação do trabalho. As orientações para redação e formatação do pôster
-                        constam no <strong><a href="https://www.technomonte.com.br/assets/mostra/Anexo%201.png">Anexo I</a></strong>.
+                        constam no <strong><a href="../assets/mostra/Anexo%201.png">Anexo
+                                I</a></strong>.
                     </p>
                     <p style="text-align: justify;">
                         2.8. Não serão aceitas inscrições com resumos e pôsteres que estejam fora do
@@ -206,7 +214,8 @@
                     <p style="text-align: justify;">
                         3.2. Os trabalhos serão avaliados por docentes da UFU e da UNIFUCAMP convidados
                         pela Coordenação da Mostra de Trabalhos, de acordo com os critérios no
-                        <a href="https://www.technomonte.com.br/assets/mostra/Anexo%202.png"><strong>Anexo II</strong></a>.
+                        <a href="../assets/mostra/Anexo%202.png"><strong>Anexo
+                                II</strong></a>.
                     </p>
 
                     <p style="text-align: justify;">
@@ -217,16 +226,21 @@
                 </div>
 
                 <div class="col-12">
-                    <small style="color: #007bff;">Abaixo, está disponibilizada a mesma versão deste edital em PDF e o modelo do pôster em PPTX.</small>
+                    <small style="color: #007bff;">Abaixo, está disponibilizada a mesma versão deste edital em PDF e o
+                        modelo do pôster em PPTX.</small>
                 </div>
                 <br>
                 <div class="col-12">
-                    <h5><a target="_blank" href="https://www.technomonte.com.br/assets/mostra/editaltechnomonte2019.pdf">Edital em PDF</a></h5>
+                    <h5><a target="_blank"
+                            href="../assets/mostra/editaltechnomonte2019.pdf">Edital em
+                            PDF</a></h5>
                 </div>
 
                 <div class="col-12">
                     <h5>
-                        <a target="_blank" href="https://www.technomonte.com.br/assets/mostra/modelo-poster-technomonte_2019.pptx">Modelo do
+                        <a target="_blank"
+                            href="../assets/mostra/modelo-poster-technomonte_2019.pptx">Modelo
+                            do
                             pôster</a>
                     </h5>
                 </div>
@@ -240,12 +254,51 @@
         <div class="row">
             <div class="col-6 text-center">
                 <h5>Realização:</h5>
-                <img src="./submissao_files/realizacao.png" width="70%">
+                <img src="../assets/img/technomonte/realizacao.png" width="70%">
             </div>
 
             <div class="col-6 text-center">
                 <h5>Apoio:</h5>
-                <img src="./submissao_files/apoio.png" width="90%">
+                <img src="../assets/img/technomonte/apoio.png" width="90%">
+            </div>
+        </div>
+    </div>
+
+    <div class="patrocinadores">
+        <div class="row">
+            <div class="col-12">
+                <center>
+                    <h3>Patrocinadores:</h3>
+                </center>
+            </div>
+            <div class="col-12">
+                <center>
+                    <h5>Visite nossos patrocinadores:</h5>
+                </center>
+            </div>
+            <div class="col-2">
+                <a target="_blank" href="https://www.alliancemonte.com"><img
+                        src="../assets/img/patrocinadores/alliance.png" alt=""></a>
+            </div>
+            <div class="col-2">
+                <a target="_blank" href="https://www.criartgrafica.com.br"><img
+                        src="../assets/img/patrocinadores/criart.png" alt=""></a>
+            </div>
+
+            <div class="col-2">
+                <img src="../assets/img/patrocinadores/monteccer.png" alt="">
+            </div>
+
+            <div class="col-2">
+                <img src="../assets/img/patrocinadores/ortodontic.png" alt="">
+            </div>
+
+            <div class="col-2">
+                <a target="_blank" href="https://www.sygmasistemas.com.br"><img
+                        src="../assets/img/patrocinadores/sygma.png" alt=""></a>
+            </div>
+            <div class="col-2">
+                <img src="../assets/img/patrocinadores/posto_santarita.jpg" alt="">
             </div>
         </div>
     </div>
@@ -259,25 +312,34 @@
                 <br>
                 <br>
 
-                UFU CAMPUS MONTE CARMELO - <a href="https://www.google.com.br/maps/place/UFU+-+Unidade+Araras/@-18.7238275,-47.5262734,17z/data=!3m1!4b1!4m5!3m4!1s0x94a588cdb71f3513:0x49e70536bad58c20!8m2!3d-18.7238275!4d-47.5240847" target="“_blank”"> km 1, LMG-746, Monte Carmelo - MG</a>
+                UFU CAMPUS MONTE CARMELO - <a
+                    href="https://www.google.com.br/maps/place/UFU+-+Unidade+Araras/@-18.7238275,-47.5262734,17z/data=!3m1!4b1!4m5!3m4!1s0x94a588cdb71f3513:0x49e70536bad58c20!8m2!3d-18.7238275!4d-47.5240847"
+                    target="“_blank”"> km 1, LMG-746, Monte Carmelo - MG</a>
 
                 <br>
-                UNIFUCAMP - <a href="https://www.google.com.br/maps/place/Fucamp+-+Monte+Carmelo/@-18.7376963,-47.5151771,15z/data=!4m5!3m4!1s0x0:0xa035303f8b80ff8d!8m2!3d-18.7376963!4d-47.5151771" target="“_blank”">Av. Brasil Oeste, s/n - Jardim Zenith II, Monte Carmelo - MG</a>
+                UNIFUCAMP - <a
+                    href="https://www.google.com.br/maps/place/Fucamp+-+Monte+Carmelo/@-18.7376963,-47.5151771,15z/data=!4m5!3m4!1s0x0:0xa035303f8b80ff8d!8m2!3d-18.7376963!4d-47.5151771"
+                    target="“_blank”">Av. Brasil Oeste, s/n - Jardim Zenith II, Monte Carmelo - MG</a>
 
                 <br>
                 Email:<a href="mailto:contato@technomonte.com.br" target="_top"> contato@technomonte.com.br</a>
             </p>
 
             <div class="footer-redes-sociais">
-                <a href="https://www.facebook.com/technomonte" class="fab fa-facebook" target="_blank" aria-hidden="true"> </a>
+                <a href="https://www.facebook.com/technomonte" class="fab fa-facebook" target="_blank"
+                    aria-hidden="true"> </a>
 
-                <a href="https://www.instagram.com/technomonte/" class="fab fa-instagram" target="_blank" aria-hidden="true"></a>
+                <a href="https://www.instagram.com/technomonte/" class="fab fa-instagram" target="_blank"
+                    aria-hidden="true"></a>
 
-                <a href="https://twitter.com/technomonte" class="fab fa-twitter-square" target="_blank" aria-hidden="true"> </a>
+                <a href="https://twitter.com/technomonte" class="fab fa-twitter-square" target="_blank"
+                    aria-hidden="true"> </a>
             </div>
         </div>
     </div>
 
 
 
-</body></html>
+</body>
+
+</html>

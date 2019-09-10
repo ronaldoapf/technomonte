@@ -187,6 +187,38 @@
         </div>
     </div>
 
+    <div class="patrocinadores">
+        <div class="row">
+            <div class="col-12">
+                <center><h3>Patrocinadores:</h3></center>
+            </div>
+            <div class="col-12">
+                <center><h5>Visite nossos patrocinadores:</h5></center>
+            </div>
+            <div class="col-2">
+                <a target="_blank" href="https://www.alliancemonte.com"><img src="../assets/img/patrocinadores/alliance.png" alt=""></a>
+            </div>
+            <div class="col-2">
+                <a target="_blank" href="https://www.criartgrafica.com.br"><img src="../assets/img/patrocinadores/criart.png" alt=""></a>
+            </div>
+
+            <div class="col-2">
+                <img src="../assets/img/patrocinadores/monteccer.png" alt="">
+            </div>
+
+            <div class="col-2">
+            <img src="../assets/img/patrocinadores/ortodontic.png" alt="">
+            </div>
+
+            <div class="col-2">
+                <a target="_blank" href="https://www.sygmasistemas.com.br"><img src="../assets/img/patrocinadores/sygma.png" alt=""></a>
+            </div>
+            <div class="col-2">
+                <img src="../assets/img/patrocinadores/posto_santarita.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
     <div class="footer">
         <div class="text">
             <h3>CONTATOS</h3><br><br>

@@ -57,81 +57,90 @@
     <div class="container">
         <div class="div-maratonas">
 
-        
-        <div class="row">
-            <div class="col-12">
-                <div class="center" style="margin-bottom:20px; margin-top: 20px;">
-                    <center><h1>Maratona de Programação</h1></center>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="center" style="margin-bottom:20px; margin-top: 20px;">
+                        <center>
+                            <h1>Maratona de Programação</h1>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="col-12" style="margin-bottom: 20px;">
+                    <center>
+                        <img src="../assets/img/technomonte/programacao.png" alt="">
+                    </center>
+                </div>
+
+                <div class="col-12" style="margin-bottom: 20px;">
+                    <center>
+                        <h2 style="margin-bottom: 20px;">Jovens Programadores</h2>
+                    </center>
+                    <ul>
+                        <li>
+                            Aquecimento: 03/10, 08h00 às 09h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
+                        </li>
+
+                        <li>
+                            Competição: 03/10, 09h00 às 12h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
+                        </li>
+                        <li>
+                            Aguarde mais informações!
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12">
+                    <center>
+                        <h2 style="margin-bottom: 20px;">Universitários</h2>
+                    </center>
+                    <ul>
+                        <li>
+                            Horário de início e término do aquecimento: 08:00 às 08:45
+                        </li>
+
+                        <li>
+                            Horário de início e término da maratona: 09:00 às 12:00
+                        </li>
+                        <li>
+                            Regras de participação:
+                            <ul>
+                                <li>
+                                    As inscrições são individuais;
+                                </li>
+                                <li>
+                                    As soluções devem ser escritas em uma das seguintes linguagens de programação: C/C++
+                                    e
+                                    Java;
+                                </li>
+
+                                <li>
+                                    As inscrições devem ser feitas até o dia 27/09/19;
+                                </li>
+
+                                <li>
+                                    Todos os maratonistas deverão ser estudantes de uma instituição de ensino reconhecia
+                                    pelo MEC. O comprovante (documento de identificação pessoal, com foto recente)
+                                    deverá
+                                    ser apresentado no dia da maratona;
+                                </li>
+
+                                <li>
+                                    A falta de um documento de identificação pessoal poderá levar à não-permissão do
+                                    participante na maratona. Não serão admitidas fotocópias, somente documentos
+                                    originais.
+                                </li>
+
+                                <li>
+                                    Será permitido o uso de material impresso durante a maratona somente para fins de
+                                    consulta.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="col-12" style="margin-bottom: 20px;">
-                <center>
-                    <img src="../assets/img/technomonte/programacao.png" alt="">
-                </center>
-            </div>
-
-            <div class="col-12" style="margin-bottom: 20px;">
-                <center><h2 style="margin-bottom: 20px;">Jovens Programadores</h2></center>
-                <ul>
-                    <li>
-                        Aquecimento: 03/10, 08h00 às 09h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
-                    </li>
-
-                    <li>
-                        Competição: 03/10, 09h00 às 12h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
-                    </li>
-                    <li>
-                        Aguarde mais informações!
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-12">
-                <center><h2 style="margin-bottom: 20px;">Universitários</h2></center>    
-                <ul>
-                    <li>
-                        Horário de início e término do aquecimento: 08:00 às 08:45
-                    </li>
-
-                    <li>
-                        Horário de início e término da maratona: 09:00 às 12:00
-                    </li>
-                    <li>
-                        Regras de participação:
-                        <ul>
-                            <li>
-                                As inscrições são individuais;
-                            </li>
-                            <li>
-                                As soluções devem ser escritas em uma das seguintes linguagens de programação: C/C++ e
-                                Java;
-                            </li>
-
-                            <li>
-                                As inscrições devem ser feitas até o dia 27/09/19;
-                            </li>
-
-                            <li>
-                                Todos os maratonistas deverão ser estudantes de uma instituição de ensino reconhecia
-                                pelo MEC. O comprovante (documento de identificação pessoal, com foto recente) deverá
-                                ser apresentado no dia da maratona;
-                            </li>
-
-                            <li>
-                                A falta de um documento de identificação pessoal poderá levar à não-permissão do
-                                participante na maratona. Não serão admitidas fotocópias, somente documentos originais.
-                            </li>
-
-                            <li>
-                                Será permitido o uso de material impresso durante a maratona somente para fins de
-                                consulta.
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
         </div>
 
@@ -472,6 +481,45 @@
             <div class="col-6 text-center">
                 <h5>Apoio:</h5>
                 <img src="../assets/img/technomonte/apoio.png" width="90%">
+            </div>
+        </div>
+    </div>
+
+    <div class="patrocinadores">
+        <div class="row">
+            <div class="col-12">
+                <center>
+                    <h3>Patrocinadores:</h3>
+                </center>
+            </div>
+            <div class="col-12">
+                <center>
+                    <h5>Visite nossos patrocinadores:</h5>
+                </center>
+            </div>
+            <div class="col-2">
+                <a target="_blank" href="https://www.alliancemonte.com"><img
+                        src="../assets/img/patrocinadores/alliance.png" alt=""></a>
+            </div>
+            <div class="col-2">
+                <a target="_blank" href="https://www.criartgrafica.com.br"><img
+                        src="../assets/img/patrocinadores/criart.png" alt=""></a>
+            </div>
+
+            <div class="col-2">
+                <img src="../assets/img/patrocinadores/monteccer.png" alt="">
+            </div>
+
+            <div class="col-2">
+                <img src="../assets/img/patrocinadores/ortodontic.png" alt="">
+            </div>
+
+            <div class="col-2">
+                <a target="_blank" href="https://www.sygmasistemas.com.br"><img
+                        src="../assets/img/patrocinadores/sygma.png" alt=""></a>
+            </div>
+            <div class="col-2">
+                <img src="../assets/img/patrocinadores/posto_santarita.jpg" alt="">
             </div>
         </div>
     </div>
