@@ -23,7 +23,6 @@
 
 	  gtag('config', 'UA-147513386-1');
     </script>
-    
 </head>
 
 <body>
