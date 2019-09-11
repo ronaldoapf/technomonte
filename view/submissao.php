@@ -13,6 +13,17 @@
     <script src="../assets/scripts/js/fontawesome.js"></script> <!-- Font Awesome -->    <script src="../assets/scripts/js/jquery.min.js"></script> <!-- Jquery -->
     <script src="../assets/scripts/js/bootstrap.min.js"></script> <!-- JS Bootstrap -->
     <script src="../assets/scripts/js/popper.min.js"></script> <!-- Popper -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147513386-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-147513386-1');
+    </script>
+    
 </head>
 
 <body>
@@ -270,62 +281,42 @@
     </div>
 
     <div class="patrocinadores">
-        <div class="row">
+        <div class="row" style="margin-left: 0;">
             <div class="col-12">
-                <center>
-                    <h3>Patrocinadores:</h3>
-                </center>
+                <center><h3>Patrocinadores:</h3></center>
             </div>
             <div class="col-12">
-                <center>
-                    <h5>Visite nossos patrocinadores:</h5>
-                </center>
+                <center><h5>Visite nossos patrocinadores:</h5></center>
             </div>
-            <div class="col-3">
+			<div class="col-md-3"></div>
+			
+			<div class="col-4 col-md-2 d-flex align-items-center">
+                <a><img src="../assets/img/patrocinadores/posto_santarita.jpg" alt=""></a>
             </div>
-            <div class="col-2 d-flex justify-content-center">
-                <a target="_blank" href="https://www.alliancemonte.com">
-                    <img src="../assets/img/patrocinadores/alliance.png" style="width: 80%;" alt="">
-                </a>
-            </div>
-
-            <div class="col-2 d-flex justify-content-cente">
-                <img src="../assets/img/patrocinadores/ortodontic.png" style="width: 80%;" alt="">
-            </div>
-
-
-            <div class="col-2 d-flex justify-content-cente">
-                <img src="../assets/img/patrocinadores/posto_santarita.jpg" style="width: 80%;" alt="">
-            </div>
-            <div class="col-3">
-            </div>
-
+			<div class="col-4 col-md-2 d-flex align-items-center text-center">
+                <a target="_blank" href="https://www.alliancemonte.com"><img src="../assets/img/patrocinadores/alliance.png" alt="" style="max-width: 80%;"></a>
+			</div>
+			<div class="col-4 col-md-2 d-flex align-items-center text-center">
+				<a><img src="../assets/img/patrocinadores/ortodontic.png" alt="" style="max-width: 80%;"></a>
+			</div>
+            
+			<div class="col-md-3"></div>
         </div>
-    </div>
-
-    <div class="patrocinadores">
-        <div class="row">
-            <div class="col-3">
+	</div>
+	<div class="patrocinadores">
+		<div class="row" style="margin-left: 0;">
+			<div class="col-md-3"></div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+				<a target="_blank" href="https://www.sygmasistemas.com.br"><img src="../assets/img/patrocinadores/sygma.png" alt=""></a>
+			</div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+                <a><img src="../assets/img/patrocinadores/monteccer.png" alt=""></a>
             </div>
-            <div class="col-2 d-flex align-items-center">
-                <a target="_blank" href="https://www.criartgrafica.com.br">
-                    <img src="../assets/img/patrocinadores/criart.png" alt="">
-                </a>
-            </div>
-
-            <div class="col-2 d-flex align-items-center">
-                <a target="_blank" href="https://www.sygmasistemas.com.br">
-                    <img src="../assets/img/patrocinadores/sygma.png" alt="">
-                </a>
-            </div>
-
-            <div class="col-2 d-flex align-items-center">
-                <img src="../assets/img/patrocinadores/monteccer.png" alt="">
-            </div>
-
-            <div class="col-3">
-            </div>
-        </div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+                <a target="_blank" href="https://www.criartgrafica.com.br"><img src="../assets/img/patrocinadores/criart.png" alt=""></a>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
     </div>
 
     <div class="footer">
