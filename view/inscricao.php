@@ -95,8 +95,8 @@
                     <thead>
                         <tr BGCOLOR="#AAD931">
                             <th></th>
-                            <th scope="col">Até dia 26/09</th>
-                            <th scope="col">Depois do 26/09</th>
+                            <th scope="col">Até o dia 26/09</th>
+                            <th scope="col">Após o dia 26/09</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -114,10 +114,22 @@
                     </tbody>
                 </table>
             </div>
-            <h5 class="text-center">* Acompanha uma camiseta do evento</h5>
+            <h6><i>* As 100 primeiras inscrições pagas ganharão uma camiseta do evento. As camisetas serão entregues somente no credenciamento.</i></h6>
+			<h6><i>* A realização da inscrição não é garantia de vaga para os Minicursos, Workshops ou Campeonatos. As vagas serão preenchidas por ordem de pagamento e os participantes receberão um e-mail de confirmação na atividade.</i></h6>
         </div>
+		<br>
+		<h3 class="text-center" style="margin-bottom: 40px;">Locais e horários de pagamento</h3>
+		
+		<div class="container">
+			<div class="text-left">
+				O pagamento da inscrição poderá ser realizado de duas maneiras:<br>
+				1º: <b>pessoalmente</b> na UFU e UNIFUCAMP a partir do dia 16/09/2019, nos locais e horários a serem divulgados nesta página.
+				<br>
+				2º: <b>online</b> pelo site <a href="https://www.ingressolive.com/technomonte-2k19" target="_blank"> <u>Ingresso Live</u></a>.
+			</div>
+		</div>
     </div>
-
+	<br>
     <!--
         <form class="form-inscricao" action="../controller/novo-cadastro.php" method="POST">
             <div class="row">
@@ -270,7 +282,22 @@
 			<div class="col-md-3"></div>
 		</div>
     </div>
-
+	<div class="patrocinadores">
+		<div class="row" style="margin-left: 0;">
+			<div class="col-md-3"></div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+				<a target="_blank" href="https://www.sicoobaracoop.com.br"><img src="../assets/img/patrocinadores/aracoop.png" alt=""></a>
+			</div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+                <a></a>
+            </div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+                <a></a>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+    </div>
+	
     <div class="footer">
         <div class="text">
             <h3>CONTATOS</h3><br><br>
