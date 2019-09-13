@@ -5,7 +5,7 @@
     if($_POST){
         $atividade = new Atividade();
 
-        $return = $atividade->buscarAtividades());
+        $return = $atividade->buscarAtividades();
         echo json_encode($return);
     }
 
