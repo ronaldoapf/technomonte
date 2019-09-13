@@ -252,8 +252,18 @@
                         </div>
                     </div>
 
+                        <?php
+                            include '../model/Atividade.php';
+
+                            $atividade = new Atividade();
+
+                            $return = $atividade->buscarAtividades();
+                            echo json_encode($return);
+                        ?>
+                        
                     <script>
                         $(document).ready(function(){
+                            
                             console.log("oi");
                             $.ajax({
                                 type: 'POST',

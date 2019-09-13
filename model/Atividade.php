@@ -1,5 +1,7 @@
 <?php
 
+    include 'Connection.php';
+
     class Atividade{
         private $codigo;
         private $nome;
@@ -7,13 +9,12 @@
         private $vagasdisponiveis;
         private $ano;
 
-        public function __construct($codigo, $nome, $vagastotais, $vagasdisponiveis, $ano){
+        public function __construct($codigo="", $nome="", $vagastotais="", $vagasdisponiveis="", $ano=""){
             $this->codigo = $codigo;
             $this->nome = $nome;
             $this->vagastotais = $vagastotais;
             $this->vagasdisponiveis = $vagasdisponiveis;
             $this->ano = $ano;
-
         }
 
         public function getCodigo(){
@@ -57,23 +58,21 @@
         }
 
         public function buscarAtividades(){
-            $conn = new Coonection();
-            $jsonAtividades = [];
-
-            try{
+            $conn = new Connection();
 
                 $select = $conn->getConn()->prepare(
                     'SELECT codigo, nome, vagasdisponiveis FROM atividade'
                 );
                 
-                $select->execute();
+                echo $select->execute();
+
                 $jsonAtividades = $select->fetchAll();
-                
-                return $jsonAtividades;
-                
-            }catch(Exception $ex){
-                return null;
-            }
+
+                if($jsonAtividades) return $jsonAtividades;
+
+                else return 'error';
+
+            
         }
     }
 
