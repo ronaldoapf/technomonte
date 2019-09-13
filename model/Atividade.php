@@ -58,15 +58,22 @@
 
         public function buscarAtividades(){
             $conn = new Coonection();
+            $jsonAtividades = [];
 
-            $select = $conn->getConn()->prepare(
-                'SELECT codigo, nome, vagasdisponiveis FROM atividade';
-            );
+            try{
 
-            $select->execute();
-            $jsonAtividades = $select->fetchAll();
-
-            return $jsonAtividades;
+                $select = $conn->getConn()->prepare(
+                    'SELECT codigo, nome, vagasdisponiveis FROM atividade'
+                );
+                
+                $select->execute();
+                $jsonAtividades = $select->fetchAll();
+                
+                return $jsonAtividades;
+                
+            }catch(Exception $ex){
+                return null;
+            }
         }
     }
 

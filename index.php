@@ -118,8 +118,8 @@
         <div class="about">
             <div class="row">
                 <div class="col-12">
-                    <div class="about-title" style="margin-top: 30px;">
-                        <h3>O Evento</h3>
+                    <div class="about-title" style="margin-top: 30px; ">
+                        <h3  class="text-center">O Evento</h3>
                     </div>
                 </div>
                 <div class="col-12">
@@ -155,7 +155,7 @@
     <div class="chamada">
         <div class="row">
             <div class="col-12">
-                <h2>Fique por dentro do nosso evento</h2>
+                <h2 class="text-center">Fique por dentro do nosso evento</h2>
                 <center><a href="view/technomonte2k19.php">Saiba mais</a></center>
             </div>
         </div>

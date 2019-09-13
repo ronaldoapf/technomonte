@@ -60,6 +60,7 @@
 	font-size: 26px;
 	color: #AAD931;
 	margin-left: 40px;
+	margin-left: -15px !important;
 }
 
 .about-text p{
@@ -118,7 +119,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
 }
 
 .form-login{

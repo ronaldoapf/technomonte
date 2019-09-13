@@ -9,21 +9,24 @@
     <link rel="stylesheet" type="text/css" href="../assets/scripts/css/style.css">
     <script src="../assets/scripts/js/fontawesome.js"></script> <!-- Font Awesome -->
     <script src="../assets/scripts/js/jquery.min.js"></script> <!-- Jquery -->
-    <script src="../assets/scripts/js/bootstrap.min.js"></script> <!-- JS Bootstrap -->
     <script src="../assets/scripts/js/popper.min.js"></script> <!-- Popper -->
+    <script src="../assets/scripts/js/bootstrap.min.js"></script> <!-- JS Bootstrap -->
     <script src="../assets/scripts/js/jquery.mask.min.js"></script>
     <script src="../assets/scripts/js/main.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147513386-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147513386-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-	  gtag('config', 'UA-147513386-1');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147513386-1');
     </script>
-    
+
 </head>
 
 <body>
@@ -74,19 +77,7 @@
     </nav>
     <br><br>
 
-
-    <div class="page">
-        <div class="container">
-            <div class="page-title">
-                <h2>
-                    <center>Inscrição</center>
-                </h2>
-            </div>
-        </div>
-    </div>
-
     <div class="container">
-
         <h3 class="text-center" style="margin-bottom: 40px;">Tabela de valores</h3>
 
         <div class="table-inscricao">
@@ -114,123 +105,249 @@
                     </tbody>
                 </table>
             </div>
-            <h6><i>* As 100 primeiras inscrições pagas ganharão uma camiseta do evento. As camisetas serão entregues somente no credenciamento.</i></h6>
-			<h6><i>* A realização da inscrição não é garantia de vaga para os Minicursos, Workshops ou Campeonatos. As vagas serão preenchidas por ordem de pagamento e os participantes receberão um e-mail de confirmação na atividade.</i></h6>
+            <h6><i>* As 100 primeiras inscrições pagas ganharão uma camiseta do evento. As camisetas serão entregues
+                    somente no credenciamento.</i></h6>
+            <h6><i>* A realização da inscrição não é garantia de vaga para os Minicursos, Workshops ou Campeonatos. As
+                    vagas serão preenchidas por ordem de pagamento e os participantes receberão um e-mail de confirmação
+                    na atividade.</i></h6>
         </div>
-		<br>
-		<h3 class="text-center" style="margin-bottom: 40px;">Locais e horários de pagamento</h3>
-		
-		<div class="container">
-			<div class="text-left">
-				O pagamento da inscrição poderá ser realizado de duas maneiras:<br>
-				1º: <b>pessoalmente</b> na UFU e UNIFUCAMP a partir do dia 16/09/2019, nos locais e horários a serem divulgados nesta página.
-				<br>
-				2º: <b>online</b> pelo site <a href="https://www.ingressolive.com/technomonte-2k19" target="_blank"> <u>Ingresso Live</u></a>.
-			</div>
-		</div>
+        <br>
+        <h3 class="text-center" style="margin-bottom: 40px;">Locais e horários de pagamento</h3>
+
+        <div class="container">
+            <div class="text-left">
+                O pagamento da inscrição poderá ser realizado de duas maneiras:<br>
+                1º: <b>pessoalmente</b> na UFU e UNIFUCAMP a partir do dia 16/09/2019, nos locais e horários a serem
+                divulgados nesta página.
+                <br>
+                2º: <b>online</b> pelo site <a href="https://www.ingressolive.com/technomonte-2k19" target="_blank">
+                    <u>Ingresso Live</u></a>.
+            </div>
+        </div>
     </div>
-	<br>
-    <!--
-        <form class="form-inscricao" action="../controller/novo-cadastro.php" method="POST">
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="Nome">Nome:</label>
-                        <input class="form-control" type="text" placeholder="Seu nome" name="nome">
-                    </div>
-                </div>
 
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="CPF">CPF:</label>
-                        <input class="form-control mask-cpf" type="text" placeholder="000.000.000-00" name="cpf">
-                    </div>
-                </div>
+    <div class="container d-flex justify-content-center">
+        <div class="form-inscricao">
+            <form action="../controller/nova-inscricao.php" method="POST">
+                <div class="row">
 
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="Nome">Email:</label>
-                        <input class="form-control" type="email" placeholder="seuemail@email.com" name="email">
+                    <div class="col-12 d-flex justify-content-center" style="margin-top: 40px; margin-bottom: 20px;">
+                        <h3>Faça já a sua inscrição</h3>
                     </div>
-                </div>
 
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="Cidade">Cidade:</label>
-                        <input class="form-control" type="text" placeholder="Insira sua cidade" name="cidade">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Nome completo:</label>
+                            <input class="form-control" type="text" name="nome" required>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="Estado">Estado</label>
-                        <select class="form-control" type="select" name="estado">
-                            <option value="" disabled="" selected="">Escolha seu estado</option>
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>CPF: <small>(Apenas números)</small></label>
+                            <input class="form-control mask-cpf" type="text" name="cpf" id="cpf" required>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Data de nascimento:</label>
+                            <input type="date" class="form-control" name="data" required>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input class="form-control" type="email" name="email" id="" required>
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <div class="form-group">
+                            <label>Endereço:</label>
+                            <input class="form-control" type="text" name="endereco" id="" required>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label>Cidade:</label>
+                            <input class="form-control" type="text" name="cidade" id="" required>
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <div class="form-group">
+                            <label>Estado:</label>
+                            <select class="form-control" type="select" name="estado">
+                                <option value="" disabled="" selected="">Escolha seu estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label>Celular:</label>
+                            <input class="form-control mask-telefone" type="text" name="celular" id="" required>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Ano de participação:</label>
+                            <select class="form-control" name="ano">
+                                <option value="2019">2019</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Este número possui WhatsApp?</label><br>
+                            <input type="radio" name="whatsapp" value="S"> Sim<br>
+                            <input type="radio" name="whatsapp" value="N"> Não<br>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Você é estudante?</label><br>
+                            <input type="radio" name="estudante" value="S"> Sim<br>
+                            <input type="radio" name="estudante" value="N"> Não<br>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Nome da instuição:</label>
+                            <input class="form-control" type="text" disabled="true" name="instituicao" id="instituicao">
+                        </div>
+                    </div>
+
+                    <script>
+                        $(document).ready(function(){
+                            console.log("oi");
+                            $.ajax({
+                                type: 'POST',
+                                url: '../controller/buscar-atividades.php',
+                                success: function(dados){
+                                    var dadosJson = JSON.parse(dados);
+                                    console.log(dadosJson);
+                                }
+                            });
+                        });
+                    </script>
+                    <div class="col-12" style="margin-bottom: 20px;">
+                        <ul class="list-group">
+                            <h4>Minicursos</h4>
+                            <li class="list-group-item">
+                                <input type="radio" name="minicurso" id=""> Introdução a Aprendizado de Máquina: modelos
+                                de classificação
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" name="minicurso" id=""> Introdução ao Linux
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" name="minicurso" id=""> Conhecendo React
+                            </li>
+                            <li class="list-group-item">
+                                <input type="radio" name="minicurso" id=""> Realidade aumentada aplicada à otimização de
+                                espaços residenciais
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12" style="margin-bottom: 20px;">
+                        <ul class="list-group">
+                            <h4>Maratonas</h4>
+                            <li class="list-group-item">
+                                <input type="radio" name="maratonas" id=""> Jovens Programadores
+                            </li>
+
+                            <li class="list-group-item">
+                                <input type="radio" name="maratonas" id=""> Maratona de Programação
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12" style="margin-bottom: 20px;">
+                        <ul class="list-group">
+                            <h4>Workshops</h4>
+                            <li class="list-group-item">
+                                <input type="radio" name="workshop" id=""> Como aplicar o processo de UX no desenvolvimento de produtos digitais
+                            </li>
+
+                            <li class="list-group-item">
+                                <input type="radio" name="workshop" id=""> Desafios e aplicações de Machine Learning no contexto de Ciências Agrárias
+                            </li>
+                        </ul>
+                    </div>
+                    <!--<div class="col-12">
+                        <h4 class="text-center" style="margin-bottom: 20px;">Minicursos</h4>
+                        <select name="" id="" class="form-control" style="margin-bottom: 20px;">
+                            <option value="">Introdução a Aprendizado de Máquina: modelos de classificação</option>
+                            <option value="">Introdução ao Linux</option>
                         </select>
                     </div>
-                </div>
 
-                <div class="col-12">
-                    <label>Estudante?</label><br>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioEstudante" value="Sim" checked>
-                        <label class="form-check-label" for="exampleRadios1">Sim</label>
+                    <div class="col-12">
+                        <h4 class="text-center" style="margin-bottom: 20px;">Maratonas</h4>
+                        <select name="" id="" class="form-control">
+                            <option value="">Jovens Programadores</option>
+                            <option value="">Universitários</option>
+                        </select>
                     </div>
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioEstudante" value="Não">
-                        <label class="form-check-label" for="exampleRadios2">Não</label>
+                    <div class="col-12">
+                        <h4 class="text-center" style="margin-bottom: 20px; margin-top: 20px;">Workshop</h4>
+                        <select name="" id="" class="form-control" style="margin-bottom: 20px;">
+                            <option value="">Como aplicar o processo de UX no desenvolvimento de produtos digitais
+                            </option>
+                            <option value="">Desafios e aplicações de Machine Learning no contexto de Ciências Agrárias
+                            </option>
+                        </select>
+                    </div>-->
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success w-100">Inscrever-se</button>
                     </div>
-                </div>
 
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="Celular">Celular:</label>
-                        <input class="form-control mask-telefone" type="text" placeholder="(##) # ####-####"
-                            name="celular">
-                    </div>
                 </div>
-
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary w-100">Se inscrever!</button>
-                </div>
-
-            </div>
-        </form>
-		
-		-->
+            </form>
+        </div>
     </div>
 
-    <br><br>
 
-    <div class="container" style="margin-bottom:20px;">
+
+    <div class="container" style="margin-top:60px; margin-bottom:20px;">
         <div class="row">
             <div class="col-6 text-center">
                 <h5>Realização:</h5>
@@ -247,57 +364,65 @@
     <div class="patrocinadores">
         <div class="row" style="margin-left: 0;">
             <div class="col-12">
-                <center><h3>Patrocinadores:</h3></center>
+                <center>
+                    <h3>Patrocinadores:</h3>
+                </center>
             </div>
             <div class="col-12">
-                <center><h5>Visite nossos patrocinadores:</h5></center>
+                <center>
+                    <h5>Visite nossos patrocinadores:</h5>
+                </center>
             </div>
-			<div class="col-md-3"></div>
-			
-			<div class="col-4 col-md-2 d-flex align-items-center">
+            <div class="col-md-3"></div>
+
+            <div class="col-4 col-md-2 d-flex align-items-center">
                 <a><img src="../assets/img/patrocinadores/posto_santarita.jpg" alt=""></a>
             </div>
-			<div class="col-4 col-md-2 d-flex align-items-center text-center">
-                <a target="_blank" href="https://www.alliancemonte.com"><img src="../assets/img/patrocinadores/alliance.png" alt="" style="max-width: 80%;"></a>
-			</div>
-			<div class="col-4 col-md-2 d-flex align-items-center text-center">
-				<a><img src="../assets/img/patrocinadores/ortodontic.png" alt="" style="max-width: 80%;"></a>
-			</div>
-            
-			<div class="col-md-3"></div>
+            <div class="col-4 col-md-2 d-flex align-items-center text-center">
+                <a target="_blank" href="https://www.alliancemonte.com"><img
+                        src="../assets/img/patrocinadores/alliance.png" alt="" style="max-width: 80%;"></a>
+            </div>
+            <div class="col-4 col-md-2 d-flex align-items-center text-center">
+                <a><img src="../assets/img/patrocinadores/ortodontic.png" alt="" style="max-width: 80%;"></a>
+            </div>
+
+            <div class="col-md-3"></div>
         </div>
-	</div>
-	<div class="patrocinadores">
-		<div class="row" style="margin-left: 0;">
-			<div class="col-md-3"></div>
-			<div class="col-4 col-md-2 d-flex align-items-center">
-				<a target="_blank" href="https://www.sygmasistemas.com.br"><img src="../assets/img/patrocinadores/sygma.png" alt=""></a>
-			</div>
-			<div class="col-4 col-md-2 d-flex align-items-center">
+    </div>
+    <div class="patrocinadores">
+        <div class="row" style="margin-left: 0;">
+            <div class="col-md-3"></div>
+            <div class="col-4 col-md-2 d-flex align-items-center">
+                <a target="_blank" href="https://www.sygmasistemas.com.br"><img
+                        src="../assets/img/patrocinadores/sygma.png" alt=""></a>
+            </div>
+            <div class="col-4 col-md-2 d-flex align-items-center">
                 <a><img src="../assets/img/patrocinadores/monteccer.png" alt=""></a>
             </div>
-			<div class="col-4 col-md-2 d-flex align-items-center">
-                <a target="_blank" href="https://www.criartgrafica.com.br"><img src="../assets/img/patrocinadores/criart.png" alt=""></a>
-			</div>
-			<div class="col-md-3"></div>
-		</div>
+            <div class="col-4 col-md-2 d-flex align-items-center">
+                <a target="_blank" href="https://www.criartgrafica.com.br"><img
+                        src="../assets/img/patrocinadores/criart.png" alt=""></a>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
     </div>
-	<div class="patrocinadores">
-		<div class="row" style="margin-left: 0;">
-			<div class="col-md-3"></div>
-			<div class="col-4 col-md-2 d-flex align-items-center">
-				<a target="_blank" href="https://www.sicoobaracoop.com.br"><img src="../assets/img/patrocinadores/aracoop.png" alt=""></a>
-			</div>
-			<div class="col-4 col-md-2 d-flex align-items-center">
+    <div class="patrocinadores">
+        <div class="row" style="margin-left: 0;">
+            <div class="col-md-3"></div>
+            <div class="col-4 col-md-2 d-flex align-items-center">
+                <a target="_blank" href="https://www.sicoobaracoop.com.br"><img
+                        src="../assets/img/patrocinadores/aracoop.jpeg" alt=""></a>
+            </div>
+            <div class="col-4 col-md-2 d-flex align-items-center">
                 <a></a>
             </div>
-			<div class="col-4 col-md-2 d-flex align-items-center">
+            <div class="col-4 col-md-2 d-flex align-items-center">
                 <a></a>
-			</div>
-			<div class="col-md-3"></div>
-		</div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
     </div>
-	
+
     <div class="footer">
         <div class="text">
             <h3>CONTATOS</h3><br><br>
