@@ -266,10 +266,11 @@
                             
                             console.log("oi");
                             $.ajax({
-                                type: 'POST',
+                                type: 'GET',
                                 url: '../controller/buscar-atividades.php',
+                                async: 'false',
                                 success: function(dados){
-                                    var dadosJson = JSON.parse(dados);
+                                    var dadosJson = JSON.(dados);
                                     console.log(dadosJson);
                                 }
                             });

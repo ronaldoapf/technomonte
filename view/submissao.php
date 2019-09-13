@@ -28,7 +28,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-blue">
         <a class="navbar-brand" href="../index.php">
-            <img src="../assets/img/logoFundoEscuro.png" width="48" height="35" alt="Logo TECHNOMONTE">
+            <img src="../assets/img/technomonte/logoFundoEscuro.png" width="48" height="35" alt="Logo TECHNOMONTE">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -146,14 +146,11 @@
                 <div class="col-12">
                     <h5>1. Definição</h5>
                     <p style="text-align: justify;">
-                        1.1.O TECHNOMONTE é um evento Científico e Tecnológico promovido pela
-                        UFU e UNIFUCAMP, que tem como objetivo divulgar os resultados dos projetos
-                        de pesquisas científicas e tecnológicas realizadas por estudantes de graduação
-                        da UFU e UNIFUCAMP, bem como contribuir para a formação dos participantes.
-
+                        1.1. O TECHNOMONTE é um evento Científico e Tecnológico promovido pela
+                        UFU e UNIFUCAMP, que tem como objetivo divulgar os resultados dos projetos de pesquisas científicas e tecnológicas da área de computação realizadas por estudantes de graduação da UFU, UNIFUCAMP e IES da região, bem como contribuir para a formação dos participantes.
                     </p>
                     <p>
-                        1.2.O TECHNOMONTE 2019 ocorrerá entre os dias 01/10/2019 e 03/10/2019,
+                        1.2. O TECHNOMONTE 2019 ocorrerá entre os dias 01/10/2019 e 03/10/2019,
                         com sessões de apresentação de pôsteres, palestras, minicursos, oficinas e
                         maratonas de programação.
                     </p>
@@ -164,9 +161,7 @@
                 <div class="col-12">
                     <h5>2. Da Inscrição e Submissão dos Pôsteres</h5>
                     <p style="text-align: justify;">
-                        2.1. Podem participar do TECHNOMONTE estudantes de graduação da UFU e
-                        da UNIFUCAMP que tenham desenvolvido projetos de origem científica ou
-                        tecnológica. Projetos em andamento também poderão ser submetidos, desde
+                        2.1. Podem participar da Mostra TECHNOMONTE estudantes de graduação da UFU, da UNIFUCAMP e de IES da região que tenham desenvolvido projetos de origem científica ou tecnológica. Projetos em andamento também poderão ser submetidos, desde
                         que apresentem algum resultado ou análise preliminar em relação aos
                         objetivos apresentados.
                     </p>
@@ -317,7 +312,22 @@
 			<div class="col-md-3"></div>
 		</div>
     </div>
-
+	<div class="patrocinadores">
+		<div class="row" style="margin-left: 0;">
+			<div class="col-md-3"></div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+				<a target="_blank" href="https://www.sicoobaracoop.com.br"><img src="../assets/img/patrocinadores/aracoop.png" alt=""></a>
+			</div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+                <a></a>
+            </div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+                <a></a>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+    </div>
+	
     <div class="footer">
         <div class="text">
             <h3>CONTATOS</h3><br><br>
