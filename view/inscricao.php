@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -242,7 +246,7 @@
 
                     <div class="col-4">
                         <div class="form-group">
-                            <label>Celular (com DDD):</label>
+                            <label>Celular <small>(com DDD)</small>:</label>
                             <input class="form-control mask-telefone" type="text" name="celular" id="" required>
                         </div>
                     </div>
@@ -281,76 +285,60 @@
 
                     <script>
                     $(document).ready(function() {
-
-                        console.log("oi");
                         $.ajax({
                             type: 'GET',
                             url: '../controller/buscar-atividades.php',
                             success: function(dados) {
-                                console.log(dados);
-                                for (var i = 0; i < dados.length; i++) {
-                                    $('#div-atividades').append(`<div class="col-12" style="margin-bottom: 20px;">
-                                        <ul class="list-group">
-                                            <h4>Minicursos</h4>
-                                            <li class="list-group-item">
-                                                <input type="radio" name="minicurso" id=""> 
+                                let innerHtml = '';
+                                let treatedData = JSON.parse(dados);
+                                const minicursos = treatedData.filter( d => d.tipo === 'Minicursos');
+                                const maratonas = treatedData.filter( d => d.tipo === 'Maratona');
+                                const workshops = treatedData.filter( d => d.tipo === 'Workshops');
 
+                                const finalData = [
+                                    {key: 'Minicursos', data: minicursos},
+                                    {key: 'Maratona', data: maratonas},
+                                    {key: 'Workshops', data: workshops}
+                                ];
+
+                                console.log(finalData);
+
+                                finalData.forEach( group => {
+                                    const { key, data } = group;
+                                    innerHtml += 
+                                    `
+                                    <div class="col-12" style="margin: 20px 0;>
+                                        <ul class="list-group">
+                                            <h4>${key}</h4>
+                                    `;
+                                    data.forEach(d => {
+                                        const {codigo, nome, vagasdisponiveis, tipo} = d;
+                                        if(vagasdisponiveis > 0){
+                                            innerHtml += `
+                                            <li class="list-group-item">
+                                                <input type="radio" name="${tipo}" value="${codigo}" id="${codigo}"> ${nome}
                                             </li>
+                                            `;
+                                        }
+                                    });
+                                    innerHtml += 
+                                    `
                                         </ul>
-                                    </div>`);
-                                }
+                                    </div>
+                                    `;
+                                });
+
+                                $('#div-atividades').append(innerHtml);
                             }
                         });
                     });
                     </script>
 
-                    <div class="col-12" id="div-atividades" style="margin-bottom: 20px;">
-                        <ul class="list-group">
-                            <h4>Minicursos</h4>
-                            <li class="list-group-item">
-                                <input type="radio" name="minicurso" id=""> Introdução a Aprendizado de Máquina: modelos
-                                de classificação
-                            </li>
-                            <li class="list-group-item">
-                                <input type="radio" name="minicurso" id=""> Introdução ao Linux
-                            </li>
-                            <li class="list-group-item">
-                                <input type="radio" name="minicurso" id=""> Conhecendo React
-                            </li>
-                            <li class="list-group-item">
-                                <input type="radio" name="minicurso" id=""> Realidade aumentada aplicada à otimização de
-                                espaços residenciais
-                            </li>
-                        </ul>
+                    <div id="div-atividades">
+                       
                     </div>
 
-                    <div class="col-12" style="margin-bottom: 20px;">
-                        <ul class="list-group">
-                            <h4>Maratonas</h4>
-                            <li class="list-group-item">
-                                <input type="radio" name="maratonas" id=""> Jovens Programadores
-                            </li>
 
-                            <li class="list-group-item">
-                                <input type="radio" name="maratonas" id=""> Maratona de Programação
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-12" style="margin-bottom: 20px;">
-                        <ul class="list-group">
-                            <h4>Workshops</h4>
-                            <li class="list-group-item">
-                                <input type="radio" name="workshop" id=""> Como aplicar o processo de UX no
-                                desenvolvimento de produtos digitais
-                            </li>
-
-                            <li class="list-group-item">
-                                <input type="radio" name="workshop" id=""> Desafios e aplicações de Machine Learning no
-                                contexto de Ciências Agrárias
-                            </li>
-                        </ul>
-                    </div>
                     <!--<div class="col-12">
                         <h4 class="text-center" style="margin-bottom: 20px;">Minicursos</h4>
                         <select name="" id="" class="form-control" style="margin-bottom: 20px;">

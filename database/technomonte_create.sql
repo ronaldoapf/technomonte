@@ -52,6 +52,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `technomonte`.`atividade` (
   `codigo` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(100) NOT NULL,
+  `tipo` VARCHAR(100) NOT NULL,
   `vagastotais` INT NOT NULL,
   `vagasdisponiveis` INT NOT NULL,
   `ano` INT NOT NULL,
@@ -64,6 +65,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `technomonte`.`atividade_inscricao` (
   `atividade_codigo` INT NOT NULL,
+  `codigo_maratona` INT NOT NULL,
+  `codigo_workshop` INT NOT NULL,
+  `codigo_minicurso` INT NOT NULL,
   `inscricao_cpf` VARCHAR(11) NOT NULL,
   `inscricao_ano` INT NOT NULL,
   `presente` CHAR(1) NOT NULL DEFAULT 'N',
@@ -109,6 +113,16 @@ CREATE TABLE IF NOT EXISTS `technomonte`.`pagamento` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+INSERT INTO atividade (nome, tipo, vagastotais, vagasdisponiveis, ano) VALUES ('Introdução a Aprendizado de Máquina: modelos de classificação', 'Minicursos', 30, 30, 2019);
+INSERT INTO atividade (nome, tipo, vagastotais, vagasdisponiveis, ano) VALUES ('Introdução ao Linux', 'Minicursos', 12, 12, 2019);
+INSERT INTO atividade (nome, tipo, vagastotais, vagasdisponiveis, ano) VALUES ('Conhecendo React', 'Minicursos', 25, 25, 2019);
+INSERT INTO atividade (nome, tipo, vagastotais, vagasdisponiveis, ano) VALUES ('Realidade Aumentada Aplicada à Otimização de Espaços Residenciais', 'Minicursos', 17, 17, 2019);
+
+INSERT INTO atividade (nome, tipo, vagastotais, vagasdisponiveis, ano) VALUES ('Maratona de Programação', 'Maratona', 30, 30, 2019);
+INSERT INTO atividade (nome, tipo, vagastotais, vagasdisponiveis, ano) VALUES ('Jovens Programadores', 'Maratona', 30, 30, 2019);
+
+INSERT INTO atividade (nome, tipo, vagastotais, vagasdisponiveis, ano) VALUES ('Como aplicar o processo de UX no desenvolvimento de produtos digitais', 'Workshops', 25, 25, 2019);
+INSERT INTO atividade (nome, tipo, vagastotais, vagasdisponiveis, ano) VALUES ('Desafios e aplicações de Machine Learning no contexto de Ciências Agrárias', 'Workshops', 25, 25, 2019);
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

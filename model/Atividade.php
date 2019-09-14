@@ -1,6 +1,6 @@
 <?php
 
-    include 'Connection.php';
+    require_once('Connection.php');
 
     class Atividade{
         private $codigo;
@@ -61,18 +61,38 @@
             $conn = new Connection();
 
                 $select = $conn->getConn()->prepare(
-                    'SELECT codigo, nome, vagasdisponiveis FROM atividade'
+                    'SELECT codigo, nome, vagasdisponiveis, tipo FROM atividade'
                 );
                 
-                echo $select->execute();
+                $select->execute();
 
                 $jsonAtividades = $select->fetchAll();
 
                 if($jsonAtividades) return $jsonAtividades;
 
                 else return 'error';
+        }
 
-            
+        public function updateAtividade($maratona, $minicurso, $workshop){
+            $conn = new Connection();
+
+            for($i=0; $i<3; $i++){
+
+                if($i == 0) $codigo = $maratona;
+
+                else if($i == 1) $codigo = $minicurso;
+
+                else $codigo = $workshop;
+
+                $update = $conn->getConn()->prepare(
+                    'UPDATE atividade SET vagasdisponiveis = vagasdisponiveis-1 where codigo = ?'
+                );
+                
+                $update->bindValue(1, $codigo);
+
+                $update->execute();
+            }
+
         }
     }
 
