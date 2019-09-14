@@ -117,11 +117,38 @@
         <div class="container">
             <div class="text-left">
                 O pagamento da inscrição poderá ser realizado de duas maneiras:<br>
-                1º: <b>pessoalmente</b> na UFU e UNIFUCAMP a partir do dia 16/09/2019, nos locais e horários a serem
-                divulgados nesta página.
-                <br>
-                2º: <b>online</b> pelo site <a href="https://www.ingressolive.com/technomonte-2k19" target="_blank">
-                    <u>Ingresso Live</u></a>.
+                <ul>
+                    <li><b>online</b> pelo site <a href="https://www.ingressolive.com/technomonte-2k19" target="_blank">
+                            <u>Ingresso Live</u></a></li>
+                    <li><b>pessoalmente</b> na UFU e na UNIFUCAMP a partir do dia 16/09/2019, nos locais e horários
+                        abaixo:</li>
+            </div>
+            <br>
+            <div class="table-inscricao">
+                <div class="center">
+                    <table class="table">
+                        <thead>
+                            <tr BGCOLOR="#AAD931">
+                                <th>Locais</th>
+                                <th scope="col">Dias</th>
+                                <th scope="col">Horários</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>UFU Unidade Araras</b><br>Bloco 1AMC - 1º andar (do lado do elevador)</td>
+                                <td>16/09 a 18/09</td>
+                                <td>08:30 as 08:50; 10:40 as 11:00; 12:50 as 13:10; 14:50 as 15:10</td>
+                            </tr>
+                            <tr>
+                                <td><b>UFU Unidade Araras</b><br>Bloco 1AMC - 1º andar (do lado do elevador)</td>
+                                <td>23/09 a 27/09</td>
+                                <td>08:30 as 08:50; 10:40 as 11:00; 12:50 as 13:10; 14:50 as 15:10</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -194,7 +221,7 @@
                                 <option value="MA">Maranhão</option>
                                 <option value="MT">Mato Grosso</option>
                                 <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
+                                <option value="MG" selected>Minas Gerais</option>
                                 <option value="PA">Pará</option>
                                 <option value="PB">Paraíba</option>
                                 <option value="PR">Paraná</option>
@@ -215,17 +242,8 @@
 
                     <div class="col-4">
                         <div class="form-group">
-                            <label>Celular:</label>
+                            <label>Celular (com DDD):</label>
                             <input class="form-control mask-telefone" type="text" name="celular" id="" required>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="form-group">
-                            <label>Ano de participação:</label>
-                            <select class="form-control" name="ano">
-                                <option value="2019">2019</option>
-                            </select>
                         </div>
                     </div>
 
@@ -247,36 +265,46 @@
 
                     <div class="col-12">
                         <div class="form-group">
-                            <label>Nome da instuição:</label>
-                            <input class="form-control" type="text" disabled="true" name="instituicao" id="instituicao">
+                            <label>Nome da instituição/empresa:</label>
+                            <input class="form-control" type="text" name="instituicao" id="instituicao">
                         </div>
                     </div>
 
-                        <?php
+                    <!--<?php
                             include '../model/Atividade.php';
 
                             $atividade = new Atividade();
 
                             $return = $atividade->buscarAtividades();
                             echo json_encode($return);
-                        ?>
-                        
+                        ?>-->
+
                     <script>
-                        $(document).ready(function(){
-                            
-                            console.log("oi");
-                            $.ajax({
-                                type: 'GET',
-                                url: '../controller/buscar-atividades.php',
-                                async: 'false',
-                                success: function(dados){
-                                    var dadosJson = JSON.(dados);
-                                    console.log(dadosJson);
+                    $(document).ready(function() {
+
+                        console.log("oi");
+                        $.ajax({
+                            type: 'GET',
+                            url: '../controller/buscar-atividades.php',
+                            success: function(dados) {
+                                console.log(dados);
+                                for (var i = 0; i < dados.length; i++) {
+                                    $('#div-atividades').append(`<div class="col-12" style="margin-bottom: 20px;">
+                                        <ul class="list-group">
+                                            <h4>Minicursos</h4>
+                                            <li class="list-group-item">
+                                                <input type="radio" name="minicurso" id=""> 
+
+                                            </li>
+                                        </ul>
+                                    </div>`);
                                 }
-                            });
+                            }
                         });
+                    });
                     </script>
-                    <div class="col-12" style="margin-bottom: 20px;">
+
+                    <div class="col-12" id="div-atividades" style="margin-bottom: 20px;">
                         <ul class="list-group">
                             <h4>Minicursos</h4>
                             <li class="list-group-item">
@@ -313,11 +341,13 @@
                         <ul class="list-group">
                             <h4>Workshops</h4>
                             <li class="list-group-item">
-                                <input type="radio" name="workshop" id=""> Como aplicar o processo de UX no desenvolvimento de produtos digitais
+                                <input type="radio" name="workshop" id=""> Como aplicar o processo de UX no
+                                desenvolvimento de produtos digitais
                             </li>
 
                             <li class="list-group-item">
-                                <input type="radio" name="workshop" id=""> Desafios e aplicações de Machine Learning no contexto de Ciências Agrárias
+                                <input type="radio" name="workshop" id=""> Desafios e aplicações de Machine Learning no
+                                contexto de Ciências Agrárias
                             </li>
                         </ul>
                     </div>
@@ -348,9 +378,12 @@
                     </div>-->
 
                     <div class="col-12">
-                        <button type="submit" class="btn btn-success w-100">Inscrever-se</button>
-                    </div>
+                        <button type="submit" class="btn btn-success w-100">Realizar inscrição</button>
 
+                        <br><br>
+                        <h6><i>* Você receberá uma confirmação da inscrição por e-mail após a confirmação do
+                                pagamento.</i></h6>
+                    </div>
                 </div>
             </form>
         </div>
@@ -422,7 +455,7 @@
             <div class="col-md-3"></div>
             <div class="col-4 col-md-2 d-flex align-items-center">
                 <a target="_blank" href="https://www.sicoobaracoop.com.br"><img
-                        src="../assets/img/patrocinadores/aracoop.jpeg" alt=""></a>
+                        src="../assets/img/patrocinadores/aracoop.png" alt=""></a>
             </div>
             <div class="col-4 col-md-2 d-flex align-items-center">
                 <a></a>

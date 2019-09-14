@@ -2,7 +2,7 @@
 
     include '../model/Atividade.php';
 
-    if($_POST){
+    if(isset($_GET)){
         $atividade = new Atividade();
 
         $return = $atividade->buscarAtividades();
