@@ -189,8 +189,8 @@
 			<div class="col-4 col-md-2 d-flex align-items-center text-center">
                 <a target="_blank" href="https://www.alliancemonte.com"><img src="../assets/img/patrocinadores/alliance.png" alt="" style="max-width: 80%;"></a>
 			</div>
-			<div class="col-4 col-md-2 d-flex align-items-center text-center">
-				<a><img src="../assets/img/patrocinadores/ortodontic.png" alt="" style="max-width: 80%;"></a>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+				<a target="_blank" href="https://www.sygmasistemas.com.br"><img src="../assets/img/patrocinadores/sygma.png" alt=""></a>
 			</div>
             
 			<div class="col-md-3"></div>
@@ -199,8 +199,10 @@
 	<div class="patrocinadores">
 		<div class="row" style="margin-left: 0;">
 			<div class="col-md-3"></div>
-			<div class="col-4 col-md-2 d-flex align-items-center">
-				<a target="_blank" href="https://www.sygmasistemas.com.br"><img src="../assets/img/patrocinadores/sygma.png" alt=""></a>
+			
+
+            <div class="col-4 col-md-2 d-flex align-items-center text-center">
+				<a><img src="../assets/img/patrocinadores/ortodontic.png" alt="" style="max-width: 80%;"></a>
 			</div>
 			<div class="col-4 col-md-2 d-flex align-items-center">
                 <a><img src="../assets/img/patrocinadores/monteccer.png" alt=""></a>
