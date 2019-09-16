@@ -148,7 +148,6 @@
                                 <td><b>UFU Unidade Araras</b><br>Bloco 1AMC - 1º andar (do lado do elevador)</td>
                                 <td>23/09 a 27/09</td>
                                 <td>08:30 as 08:50; 10:40 as 11:00; 12:50 as 13:10; 14:50 as 15:10</td>
-
                             </tr>
                         </tbody>
                     </table>
@@ -159,7 +158,7 @@
 
     <div class="container d-flex justify-content-center">
         <div class="form-inscricao">
-            <form action="../controller/nova-inscricao.php" method="POST">
+            <form name="formInscricao" action="../controller/nova-inscricao.php" method="POST" >
                 <div class="row">
 
                     <div class="col-12 d-flex justify-content-center" style="margin-top: 40px; margin-bottom: 20px;">
@@ -169,7 +168,7 @@
                     <div class="col-6">
                         <div class="form-group">
                             <label>Nome completo:</label>
-                            <input class="form-control" type="text" name="nome" required>
+                            <input class="form-control" type="text" name="nome" id="nome" required>
                         </div>
                     </div>
 
@@ -180,6 +179,16 @@
                         </div>
                     </div>
 
+<<<<<<< HEAD
+=======
+                    <div class="col-6 col-sm-6">
+                        <div class="form-group">
+                            <label>Data de nascimento:</label>
+                            <input type="date" class="form-control" name="data" required>
+                        </div>
+                    </div>
+
+>>>>>>> b5689ff0d263a892ae4489b9dc8925356c314015
                     <div class="col-12">
                         <div class="form-group">
                             <label>Email:</label>
@@ -187,21 +196,21 @@
                         </div>
                     </div>
 
-                    <div class="col-8">
+                    <div class="col-6">
                         <div class="form-group">
                             <label>Endereço:</label>
                             <input class="form-control" type="text" name="endereco" id="" required>
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-6">
                         <div class="form-group">
                             <label>Cidade:</label>
                             <input class="form-control" type="text" name="cidade" id="" required>
                         </div>
                     </div>
 
-                    <div class="col-8">
+                    <div class="col-6">
                         <div class="form-group">
                             <label>Estado:</label>
                             <select class="form-control" type="select" name="estado">
@@ -237,9 +246,13 @@
                         </div>
                     </div>
 
+<<<<<<< HEAD
                     <div class="col-4 col-sm-auto">
+=======
+                    <div class="col-6 col-sm-6">
+>>>>>>> b5689ff0d263a892ae4489b9dc8925356c314015
                         <div class="form-group">
-                            <label>Celular <small>(com DDD)</small>:</label>
+                            <label>Celular<small>(com DDD)</small>:</label>
                             <input class="form-control mask-telefone" type="text" name="celular" id="" required>
                         </div>
                     </div>
