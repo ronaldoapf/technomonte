@@ -97,11 +97,11 @@
                     </center>
                     <ul>
                         <li>
-                            Aquecimento: 03/10, 08h00 às 09h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
+                            Aquecimento: 03/10 (quinta-feira), 07h15 às 08h15 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
                         </li>
 
                         <li>
-                            Competição: 03/10, 09h00 às 12h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
+                            Competição: 03/10 (quinta-feira), 08h20 às 10h20 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
                         </li>
                         <li>
                             Aguarde mais informações!
@@ -115,11 +115,11 @@
                     </center>
                     <ul>
                         <li>
-                            Horário de início e término do aquecimento: 08:00 às 08:45
+                            Aquecimento: 03/10 (quinta-feira), 08h00 às 08h45 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
                         </li>
 
                         <li>
-                            Horário de início e término da maratona: 09:00 às 12:00
+                            Competição: 03/10 (quinta-feira), 09h00 às 12h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
                         </li>
                         <li>
                             Regras de participação:
@@ -138,16 +138,14 @@
                                 </li>
 
                                 <li>
-                                    Todos os maratonistas deverão ser estudantes de uma instituição de ensino reconhecia
-                                    pelo MEC. O comprovante (documento de identificação pessoal, com foto recente)
-                                    deverá
+                                    Todos os maratonistas deverão ser estudantes de uma instituição de ensino superior reconhecida
+                                    pelo MEC. O comprovante e um documento de identificação pessoal com foto recente deverá
                                     ser apresentado no dia da maratona;
                                 </li>
 
                                 <li>
                                     A falta de um documento de identificação pessoal poderá levar à não-permissão do
-                                    participante na maratona. Não serão admitidas fotocópias, somente documentos
-                                    originais.
+                                    participante na maratona. Não serão admitidas fotocópias, somente documentos originais.
                                 </li>
 
                                 <li>
@@ -239,7 +237,7 @@
 
                             <li>
                                 <h4>Ministrantes:</h4>
-                                <p>Gilson Marques da Silva</p>
+                                <p>Gilson Marques da Silva (Perito Criminal Federal e Professor).</p>
                             </li>
                             <li>
                                 <h4>Minibiografia:</h4>
@@ -303,14 +301,14 @@
                             </li>
 
                             <li>
-                                <h4>Ministrante:</h4>
-                                <p>Pâmela Marinho Rezende.</p>
+                                <h4>Ministrantes:</h4>
+                                <p>Pâmela Marinho Rezende (UFMG) e Joicymara Santos Xavier (UFVJM).</p>
                             </li>
 
                             <li>
                                 <h4>Minibiografia:</h4>
                                 <p style="text-align: justify;">
-                                    Bacharela em Ciência da Computação pela Universidade Federal de Lavras (2014) e
+                                    Pâmela é bacharela em Ciência da Computação pela Universidade Federal de Lavras (2014) e
                                     Mestra em Biotecnologia Vegetal pela Universidade Federal de Lavras (2017).
                                     Atualmente é Doutoranda em Bioinformática da Universidade Federal de Minas Gerais,
                                     trabalhando em colaboração com o Instituto René Rachou (Fiocruz Minas) e University
@@ -320,13 +318,25 @@
                                     Embrapa Milho e Sorgo, e West Virginia University. Em paralelo fundadora e
                                     webdesigner na empresa INUP, focada em consultoria e desenvolvimento de design em
                                     sistemas web. É idealizadora e voluntária do projeto social Código X, que incentiva
-                                    meninas a optarem pela carreira tecnológica.
+                                    meninas a optarem pela carreira tecnológica. 
                                 </p>
+								<div class="radius-100">
+									<center><img src="../assets/img/pessoas/pamela.jpg" width="30%"></center>
+								</div><br>
+								<p style="text-align: justify;">
+									Joicymara é professora na Universidade Federal dos Vales do Jequitinhonha e Mucuri, possui bacharelado
+									em Sistemas de Informação (UNIMONTES) e mestrado em Ciência da Computação (UFU). Atualmente é doutoranda
+									em Bioinformática da Universidade Federal de Minas Gerais, trabalhando em colaboração com o
+									Instituto René Rachou (Fiocruz Minas), University of Melbourne e Baker Institute na Austrália.
+									Suas principais frentes de trabalho são Aprendizado de Máquina e Ciência de Dados aplicados à
+									predição de efeitos de mutações na estrutura e função de proteínas. Além disso, é voluntária de
+									um projeto social que incentiva meninas a seguirem carreiras tecnológicas, o Código X.
+								</p>
+								<div class="radius-100">
+									<center><img src="../assets/img/pessoas/joicymara.jpg" width="30%"></center>
+								</div>
                             </li>
                         </ul>
-                        <div class="radius-100">
-                            <center><img src="../assets/img/pessoas/pamela.jpg" width="30%"></center>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -401,7 +411,7 @@
 
                             <li>
                                 <h4>Ministrante:</h4>
-                                <p>Camilo de Lellis Barreto Junior.</p>
+                                <p>Camilo de Lellis Barreto Junior (UFU).</p>
                             </li>
 
                             <li>
@@ -442,7 +452,7 @@
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            <h5>Workshop: Como aplicar o processo de UX no desenvolvimento de produtos digitais.</h5>
+                            <h5>Workshop: Como aplicar o processo de UX no desenvolvimento de produtos digitais</h5>
                         </button>
                     </h2>
                 </div>
@@ -462,7 +472,7 @@
                             <li>
                                 <h4>Ministrante:</h4>
                                 <p style="text-align: justify;">
-                                    Rafael Siqueira (CEO e Foundador do Estúdio FLOW)
+                                    Rafael Siqueira (CEO e Foundador do Estúdio FLOW).
                                 </p>
                             </li>
 
@@ -480,6 +490,68 @@
                             <div class="radius-100">
                                 <center><img src="../assets/img/pessoas/rafael.jpg" width="30%"></center>
                             </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+			<!-- Sexto Colapse -->
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <h5>Workshop: Desafios e aplicações de Machine Learning no contexto de Ciências Agrárias</h5>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <h4>Descrição:</h4>
+                                <p style="text-align: justify;">
+                                   A proposta do workshop é demonstrar a aplicação da Aprendizagem de Máquina no contexto
+de Ciências Agrárias , levantando os desafios que a área enfrenta e expondo soluções baseadas
+em estudos e projetos recentes nas áreas de Ciência de Dados e Aprendizagem de Máquina
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Ministrantes:</h4>
+                                <p>Pâmela Marinho Rezende (UFMG) e Joicymara Santos Xavier (UFVJM).</p>
+                            </li>
+
+                            <li>
+                                <h4>Minibiografia:</h4>
+                                <p style="text-align: justify;">
+                                    Pâmela é bacharela em Ciência da Computação pela Universidade Federal de Lavras (2014) e
+                                    Mestra em Biotecnologia Vegetal pela Universidade Federal de Lavras (2017).
+                                    Atualmente é Doutoranda em Bioinformática da Universidade Federal de Minas Gerais,
+                                    trabalhando em colaboração com o Instituto René Rachou (Fiocruz Minas) e University
+                                    of Melbourne. Está se especializando nas áreas de Ciência de dados e Aprendizado de
+                                    Máquina, com foco em dados biológicos. Tem parcerias de trabalho com a Universidade
+                                    Federal de Lavras, Universidade Federal do Tocantins,
+                                    Embrapa Milho e Sorgo, e West Virginia University. Em paralelo fundadora e
+                                    webdesigner na empresa INUP, focada em consultoria e desenvolvimento de design em
+                                    sistemas web. É idealizadora e voluntária do projeto social Código X, que incentiva
+                                    meninas a optarem pela carreira tecnológica. 
+                                </p>
+								<div class="radius-100">
+									<center><img src="../assets/img/pessoas/pamela.jpg" width="30%"></center>
+								</div><br>
+								<p style="text-align: justify;">
+									Joicymara é professora na Universidade Federal dos Vales do Jequitinhonha e Mucuri, possui bacharelado
+									em Sistemas de Informação (UNIMONTES) e mestrado em Ciência da Computação (UFU). Atualmente é doutoranda
+									em Bioinformática da Universidade Federal de Minas Gerais, trabalhando em colaboração com o
+									Instituto René Rachou (Fiocruz Minas), University of Melbourne e Baker Institute na Austrália.
+									Suas principais frentes de trabalho são Aprendizado de Máquina e Ciência de Dados aplicados à
+									predição de efeitos de mutações na estrutura e função de proteínas. Além disso, é voluntária de
+									um projeto social que incentiva meninas a seguirem carreiras tecnológicas, o Código X.
+								</p>
+								<div class="radius-100">
+									<center><img src="../assets/img/pessoas/joicymara.jpg" width="30%"></center>
+								</div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -503,72 +575,59 @@
         </div>
     </div>
 
-  
     <div class="patrocinadores">
         <div class="row" style="margin-left: 0;">
             <div class="col-12">
-                <center>
-                    <h3>Patrocinadores:</h3>
-                </center>
+                <center><h3>Patrocinadores:</h3></center>
             </div>
             <div class="col-12">
-                <center>
-                    <h5>Visite nossos patrocinadores:</h5>
-                </center>
+                <center><h5>Visite nossos patrocinadores:</h5></center>
             </div>
-            <div class="col-md-3"></div>
-
-            <div class="col-4 col-md-2 d-flex align-items-center">
+			<div class="col-md-3"></div>
+			
+			<div class="col-4 col-md-2 d-flex align-items-center">
                 <a><img src="../assets/img/patrocinadores/posto_santarita.jpg" alt=""></a>
             </div>
-            <div class="col-4 col-md-2 d-flex align-items-center text-center">
-                <a target="_blank" href="https://www.alliancemonte.com"><img
-                        src="../assets/img/patrocinadores/alliance.png" alt="" style="max-width: 80%;"></a>
-            </div>
-
+			<div class="col-4 col-md-2 d-flex align-items-center text-center">
+                <a target="_blank" href="https://www.alliancemonte.com"><img src="../assets/img/patrocinadores/alliance.png" alt="" style="max-width: 80%;"></a>
+			</div>
             <div class="col-4 col-md-2 d-flex align-items-center">
-                <a target="_blank" href="https://www.sygmasistemas.com.br"><img
-                        src="../assets/img/patrocinadores/sygma.png" alt=""></a>
-            </div>
-            
-
-            <div class="col-md-3"></div>
+				<a target="_blank" href="https://www.sygmasistemas.com.br"><img src="../assets/img/patrocinadores/sygma.png" alt=""></a>
+			</div>
+			<div class="col-md-3"></div>
         </div>
-    </div>
-    <div class="patrocinadores">
-        <div class="row" style="margin-left: 0;">
-            <div class="col-md-3"></div>
-            <div class="col-4 col-md-2 d-flex align-items-center text-center">
-                <a><img src="../assets/img/patrocinadores/ortodontic.png" alt="" style="max-width: 80%;"></a>
-            </div>
-
-            <div class="col-4 col-md-2 d-flex align-items-center">
+	</div>
+	<div class="patrocinadores">
+		<div class="row" style="margin-left: 0;">
+			<div class="col-md-3"></div>
+			<div class="col-4 col-md-2 d-flex align-items-center text-center">
+				<a><img src="../assets/img/patrocinadores/ortodontic.png" alt=""></a>
+			</div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
                 <a><img src="../assets/img/patrocinadores/monteccer.png" alt=""></a>
             </div>
-            <div class="col-4 col-md-2 d-flex align-items-center">
-                <a target="_blank" href="https://www.criartgrafica.com.br"><img
-                        src="../assets/img/patrocinadores/criart.png" alt=""></a>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+                <a target="_blank" href="https://www.criartgrafica.com.br"><img src="../assets/img/patrocinadores/criart.png" alt=""></a>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
     </div>
-    <div class="patrocinadores">
-        <div class="row" style="margin-left: 0;">
-            <div class="col-md-3"></div>
-            <div class="col-4 col-md-2 d-flex align-items-center">
-                <a target="_blank" href="https://www.sicoobaracoop.com.br"><img
-                        src="../assets/img/patrocinadores/aracoop.png" alt=""></a>
-            </div>
-            <div class="col-4 col-md-2 d-flex align-items-center">
+	<div class="patrocinadores">
+		<div class="row" style="margin-left: 0;">
+			<div class="col-md-3"></div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+				<a target="_blank" href="https://www.sicoobaracoop.com.br"><img src="../assets/img/patrocinadores/aracoop.png" alt=""></a>
+			</div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
                 <a></a>
             </div>
-            <div class="col-4 col-md-2 d-flex align-items-center">
+			<div class="col-4 col-md-2 d-flex align-items-center">
                 <a></a>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
     </div>
-
+	
     <div class="footer">
         <div class="text">
             <h3>CONTATOS</h3><br><br>

@@ -1,0 +1,109 @@
+<?php
+    session_start();
+    if (!isset($_SESSION['user'])) {
+        Header('Location: login.php');
+    }
+?>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ADMINISTRADOR - TECHNOMONTE 2K19</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../assets/img/technomonte/logo_ico.ico"> <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="../assets/scripts/css/bootstrap.min.css"> <!-- CSS Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../assets/scripts/css/style.css">
+    <script src="../assets/scripts/js/fontawesome.js"></script> <!-- Font Awesome -->
+    <script src="../assets/scripts/js/jquery.min.js"></script> <!-- Jquery -->
+    <script src="../assets/scripts/js/popper.min.js"></script> <!-- Popper -->
+    <script src="../assets/scripts/js/bootstrap.min.js"></script> <!-- JS Bootstrap -->
+    <script src="../assets/scripts/js/jquery.mask.min.js"></script>
+    <script src="../assets/scripts/js/main.js"></script>
+</head>
+
+<body>
+    <div class="atualizar-dados">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label>Nome:</label>
+                    <input type="text" class="form-control" value="${inscrito[0].nome}" disabled="true">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-group">
+                    <label>CPF:</label>
+                    <input type="text" class="form-control" value="${inscrito[0].cpf}" disabled="true">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="text" class="form-control" value="${inscrito[0].email}" disabled="true">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-group">
+                    <label>Cidade:</label>
+                    <input type="text" class="form-control" value="${inscrito[0].cidade}" disabled="true">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-group">
+                    <label>Estado:</label>
+                    <input type="text" class="form-control" value="${inscrito[0].estado}" disabled="true">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-group">
+                    <label>Celular:</label>
+                    <input type="text" class="form-control" value="${inscrito[0].celular}" disabled="true">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-group">
+                    <label>Cidade:</label>
+                    <input type="text" class="form-control" value="${inscrito[0].cidade}" disabled="true">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-group">
+                    <label>Minicurso escolhido: ${inscrito[0].nomeAtividade}</label>
+                    <select>
+                        ${getAtividades(atividades)}
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-group">
+                    <label>Maratona escolhido: ${inscrito[1].nomeAtividade}</label>
+                    <select>
+                        ${getMaratonas(atividades)}
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-group">
+                    <label>Workshop escolhido: ${inscrito[2].nomeAtividade}</label>
+                    <select>
+                        ${getWorkshops(atividades)}
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -65,9 +65,6 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `technomonte`.`atividade_inscricao` (
   `atividade_codigo` INT NOT NULL,
-  `codigo_maratona` INT NOT NULL,
-  `codigo_workshop` INT NOT NULL,
-  `codigo_minicurso` INT NOT NULL,
   `inscricao_cpf` VARCHAR(11) NOT NULL,
   `inscricao_ano` INT NOT NULL,
   `presente` CHAR(1) NOT NULL DEFAULT 'N',

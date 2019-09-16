@@ -17,7 +17,7 @@
         private $instituicao; // ok
         private $crendenciamento; 
 
-        public function __construct($cpf, $ano, $nome, $endereco, $cidade, $estado, $celular, $whatsapp, $email, $data, $estudante, $instituicao, $crendenciamento){
+        public function __construct($cpf="", $ano="", $nome="", $endereco="", $cidade="", $estado="", $celular="", $whatsapp="", $email="", $data="", $estudante="", $instituicao="", $crendenciamento=""){
             $this->cpf = $cpf;
             $this->ano = $ano;
             $this->nome = $nome;
@@ -161,8 +161,28 @@
             $insert->bindValue(13, $this->credenciamento);
             
             return $insert->execute();
-
         }
+
+        public function verificarIscricao($cpf){
+            $conn = new Connection();
+
+            $select = $conn->getConn()->prepare(
+
+                'SELECT * FROM inscricao insc
+                INNER JOIN atividade_inscricao atvinsc ON insc.cpf = atvinsc.inscricao_cpf AND insc.ano = atvinsc.inscricao_ano
+                INNER JOIN atividade atv ON atv.codigo = atvinsc.atividade_codigo WHERE cpf = ?'
+            );
+
+            $select->bindValue('1', $cpf);
+
+            $retorno = $select->execute();
+
+            if($retorno == 1){
+                $jsonInscrito = $select->fetchAll();
+                return $jsonInscrito;
+            }
+        }
+
     }
 
 ?>

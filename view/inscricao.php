@@ -166,7 +166,7 @@
                         <h3>Faça já a sua inscrição</h3>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-6">
                         <div class="form-group">
                             <label>Nome completo:</label>
                             <input class="form-control" type="text" name="nome" required>
@@ -177,13 +177,6 @@
                         <div class="form-group">
                             <label>CPF: <small>(Apenas números)</small></label>
                             <input class="form-control mask-cpf" type="text" name="cpf" id="cpf" required>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="form-group">
-                            <label>Data de nascimento:</label>
-                            <input type="date" class="form-control" name="data" required>
                         </div>
                     </div>
 
@@ -244,7 +237,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-4 col-sm-auto">
                         <div class="form-group">
                             <label>Celular <small>(com DDD)</small>:</label>
                             <input class="form-control mask-telefone" type="text" name="celular" id="" required>
@@ -301,8 +294,6 @@
                                     {key: 'Workshops', data: workshops}
                                 ];
 
-                                console.log(finalData);
-
                                 finalData.forEach( group => {
                                     const { key, data } = group;
                                     innerHtml += 
@@ -312,11 +303,11 @@
                                             <h4>${key}</h4>
                                     `;
                                     data.forEach(d => {
-                                        const {codigo, nome, vagasdisponiveis, tipo} = d;
+                                        const {codigo, nomeAtividade, vagasdisponiveis, tipo} = d;
                                         if(vagasdisponiveis > 0){
                                             innerHtml += `
                                             <li class="list-group-item">
-                                                <input type="radio" name="${tipo}" value="${codigo}" id="${codigo}"> ${nome}
+                                                <input type="radio" name="${tipo}" value="${codigo}" id="${codigo}"> ${nomeAtividade}
                                             </li>
                                             `;
                                         }

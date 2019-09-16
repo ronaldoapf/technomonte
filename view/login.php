@@ -60,24 +60,25 @@
                         <a class="dropdown-item" target="_blank" href="https://www.technomonte.com.br/2018">2018</a>
                     </div>
                 </li>
+
             </ul>
         </div>
     </nav>
     <br><br>
     <div class="form-login">
-        <form method="POST">
+        <form method="POST" action="../controller/iniciar-sessao.php">
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label>Login:</label>
-                        <input class="form-control" type="text">
+                        <label>Usuário:</label>
+                        <input class="form-control" type="text" name="usuario">
                     </div>
                 </div>
 
                 <div class="col-12">
                     <div class="form-group">
                         <label>Senha:</label>
-                        <input class="form-control" type="password">
+                        <input class="form-control" type="password" name="senha">
                     </div>
                 </div>
 

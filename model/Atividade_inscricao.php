@@ -60,7 +60,6 @@
 			$conn = new Connection();
 
 			for($i=0; $i<3; $i++){
-				echo $i;
 
 				$insert = $conn->getConn()->prepare(
 					'INSERT INTO atividade_inscricao(atividade_codigo, inscricao_cpf, inscricao_ano, presente) VALUES (?, ?, ?, ?)'

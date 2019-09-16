@@ -1,39 +1,29 @@
 <?php
 
+	require_once('Connection.php');
+
     class Usuario{
         private $usuario;
         private $nome;
         private $senha;
-    }
+		
 
-    public function __construct($usuario, $nome, $senha){
-        $this->usuario = $usuario;
-        $this->nome = $nome;
-        $this->senha = $senha;
-    }
+		public function verificarUsuarioExistente($usuario, $senha){
+			$conn = new Connection();
 
-    public function getUsuario(){
-		return $this->usuario;
+			$select = $conn->getConn()->prepare(
+				'SELECT usuario, senha FROM usuario where usuario = ? AND senha = ?'
+			);
+
+			$select->bindValue(1, $usuario);
+			$select->bindValue(2, $senha);
+
+			$retorno = $select->execute();
+
+			if($retorno == 1) return $retorno;
+			
+			else return 'error';
+
+		}
 	}
-
-	public function setUsuario($usuario){
-		$this->usuario = $usuario;
-	}
-
-	public function getNome(){
-		return $this->nome;
-	}
-
-	public function setNome($nome){
-		$this->nome = $nome;
-	}
-
-	public function getSenha(){
-		return $this->senha;
-	}
-
-	public function setSenha($senha){
-		$this->senha = $senha;
-	}
-
 ?>

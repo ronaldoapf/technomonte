@@ -61,7 +61,7 @@
             $conn = new Connection();
 
                 $select = $conn->getConn()->prepare(
-                    'SELECT codigo, nome, vagasdisponiveis, tipo FROM atividade'
+                    'SELECT codigo, nomeAtividade, vagasdisponiveis, tipo FROM atividade'
                 );
                 
                 $select->execute();
