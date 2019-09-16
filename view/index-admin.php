@@ -99,7 +99,7 @@
 
     $("#buttonClick").click(function() {
         $("#atualizar").click(function(){
-            $(this).destroy();
+            $("enable").prop("disabled", true);
          });
         $(".atualizar-dados").empty();
 

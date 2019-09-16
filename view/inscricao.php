@@ -179,16 +179,6 @@
                         </div>
                     </div>
 
-<<<<<<< HEAD
-=======
-                    <div class="col-6 col-sm-6">
-                        <div class="form-group">
-                            <label>Data de nascimento:</label>
-                            <input type="date" class="form-control" name="data" required>
-                        </div>
-                    </div>
-
->>>>>>> b5689ff0d263a892ae4489b9dc8925356c314015
                     <div class="col-12">
                         <div class="form-group">
                             <label>Email:</label>
@@ -246,11 +236,7 @@
                         </div>
                     </div>
 
-<<<<<<< HEAD
-                    <div class="col-4 col-sm-auto">
-=======
                     <div class="col-6 col-sm-6">
->>>>>>> b5689ff0d263a892ae4489b9dc8925356c314015
                         <div class="form-group">
                             <label>Celular<small>(com DDD)</small>:</label>
                             <input class="form-control mask-telefone" type="text" name="celular" id="" required>
@@ -341,33 +327,6 @@
                     <div id="div-atividades">
                        
                     </div>
-
-
-                    <!--<div class="col-12">
-                        <h4 class="text-center" style="margin-bottom: 20px;">Minicursos</h4>
-                        <select name="" id="" class="form-control" style="margin-bottom: 20px;">
-                            <option value="">Introdução a Aprendizado de Máquina: modelos de classificação</option>
-                            <option value="">Introdução ao Linux</option>
-                        </select>
-                    </div>
-
-                    <div class="col-12">
-                        <h4 class="text-center" style="margin-bottom: 20px;">Maratonas</h4>
-                        <select name="" id="" class="form-control">
-                            <option value="">Jovens Programadores</option>
-                            <option value="">Universitários</option>
-                        </select>
-                    </div>
-
-                    <div class="col-12">
-                        <h4 class="text-center" style="margin-bottom: 20px; margin-top: 20px;">Workshop</h4>
-                        <select name="" id="" class="form-control" style="margin-bottom: 20px;">
-                            <option value="">Como aplicar o processo de UX no desenvolvimento de produtos digitais
-                            </option>
-                            <option value="">Desafios e aplicações de Machine Learning no contexto de Ciências Agrárias
-                            </option>
-                        </select>
-                    </div>-->
 
                     <div class="col-12">
                         <button type="submit" class="btn btn-success w-100">Realizar inscrição</button>
