@@ -61,7 +61,7 @@
             $conn = new Connection();
 
                 $select = $conn->getConn()->prepare(
-                    'SELECT codigo, nomeAtividade, vagasdisponiveis, tipo FROM atividade'
+                    'SELECT codigo, nomeAtividade, vagasdisponiveis, tipo FROM atividade WHERE ano = 2019'
                 );
                 
                 $select->execute();

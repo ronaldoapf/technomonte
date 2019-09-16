@@ -11,8 +11,10 @@ include '../model/Atividade.php';
         
         $cpf = $_GET['cpf'];
     
+        
         $verificarInscrito = new Inscricao();
         $atividade = new Atividade();
+
 
         $return = $atividade->buscarAtividades();
         $retorno = $verificarInscrito->verificarIscricao($cpf);

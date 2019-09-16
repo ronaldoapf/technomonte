@@ -119,7 +119,7 @@
                 </tr>
                 <tr>
                     <th width="20%"scope="row">09h00 - 12h00<br>13h30 - 16h30</th>
-                    <td width="50%">Minicurso: Introdução ao Linux<br>
+                    <td width="50%">Minicurso: Conhecendo e mostrando como o linux pode evoluir sua carreira<br>
 					<i>Ministrante: Rogério Fontes (Everis)</i></td>
                     <td width="30%">Laboratórios BSI (Bloco 1B, 1º andar) Unidade Araras - UFU Monte Carmelo</td>
                 </tr>
@@ -142,7 +142,8 @@
                 </tr>
                 <tr>
                     <th width="20%" scope="row">20h45 - 21h45</th>
-                    <td width="50%">Palestra: "A definir"</td>
+                    <td width="50%">Palestra: "Agricultura 4.0 aplicada a imagens - drones e satélites"<br>
+					<i>Ministrante: Empresa SENSIX</i></td>
                     <td width="30%">Anfiteatro UNIFUCAMP</td>
                 </tr>
             </tbody>
@@ -262,8 +263,8 @@
                 <a target="_blank" href="https://www.sicoobaracoop.com.br"><img
                         src="../assets/img/patrocinadores/aracoop.png" alt=""></a>
             </div>
-            <div class="col-4 col-md-2 d-flex align-items-center">
-                <a></a>
+            <div class="col-4 col-md-2 d-flex align-items-center text-center">
+                <a><img src="../assets/img/patrocinadores/casiu.png" alt="" style="max-width: 90%;"></a>
             </div>
             <div class="col-4 col-md-2 d-flex align-items-center">
                 <a></a>

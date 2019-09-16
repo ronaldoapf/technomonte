@@ -446,17 +446,64 @@
                     </div>
                 </div>
             </div>
-            <!-- Quinto Colapse -->
+			<!-- Quinto Colapse -->
             <div class="card">
                 <div class="card-header" id="headingFive">
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            <h5>Workshop: Como aplicar o processo de UX no desenvolvimento de produtos digitais</h5>
+                            <h5>
+                                Minicurso: Conhecendo e mostrando como o linux pode evoluir sua carreira
+                            </h5>
                         </button>
                     </h2>
                 </div>
                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <h4>Descrição:</h4>
+                                <p style="text-align: justify;">
+                                    Vamos discutir sobre a história do linux, como nasceu, como funciona a comunidade e como pode ajudar sua carreira utilizá-lo. Comandos básicos de utilização serão abordados.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Ministrante:</h4>
+                                <p>Rogério Fontes Tomaz (Líder Técnico mobile da Everis e Professor).</p>
+                            </li>
+
+                            <li>
+                                <h4>Minibiografia:</h4>
+                                <p style="text-align: justify;">
+                                    Apaixonado em Maneiras e Formas Ágeis de Criar Código Fonte. Sempre programando com um Bom Café e Escutando um Belo e Pesado Rock`n Roll... Trabalha há mais de 10 Anos com JAVA e LINUX, passando por ANDROID, PYTHON, PHP, ANGULAR E NODE.JS. É Professor Universitário e ministra as disciplinas: Redes de Computadores; Java e Dispositivos Móveis. Jugleader e Co-Fundador do UAIJUG (Grupo de Usuários do Triângulo Mineiro) e do TRIÂNGULO HACKERSPACE. Além disso, aventura-se como Empreendedor, é Líder Técnico mobile da Everis Uberlândia. <br>
+									Linkedin: 
+									<a href="https://www.linkedin.com/in/rogeriofontestomaz" target="_blank">https://www.linkedin.com/in/rogeriofontestomaz</a>
+									<br>
+									Blog: <a href="https://rogeriofontespsi.wordpress.com" target="_blank">https://rogeriofontespsi.wordpress.com</a>
+									<br>
+									Website: <a href="https://about.me/rogeriofontes" target="_blank">https://about.me/rogeriofontes</a>
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="radius-100">
+                            <center><img src="../assets/img/pessoas/rogerio.jpg" width="20%"></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+            <!-- Sexto Colapse -->
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <h5>Workshop: Como aplicar o processo de UX no desenvolvimento de produtos digitais</h5>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
                     <div class="card-body">
                         <ul>
                             <li>
@@ -494,17 +541,17 @@
                     </div>
                 </div>
             </div>
-			<!-- Sexto Colapse -->
+			<!-- Sétipo Colapse -->
             <div class="card">
-                <div class="card-header" id="headingSix">
+                <div class="card-header" id="headingSeven">
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                             <h5>Workshop: Desafios e aplicações de Machine Learning no contexto de Ciências Agrárias</h5>
                         </button>
                     </h2>
                 </div>
-                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
                     <div class="card-body">
                         <ul>
                             <li>

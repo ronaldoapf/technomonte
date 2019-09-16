@@ -170,7 +170,7 @@
 
                 'SELECT * FROM inscricao insc
                 INNER JOIN atividade_inscricao atvinsc ON insc.cpf = atvinsc.inscricao_cpf AND insc.ano = atvinsc.inscricao_ano
-                INNER JOIN atividade atv ON atv.codigo = atvinsc.atividade_codigo WHERE cpf = ?'
+                INNER JOIN atividade atv ON atv.codigo = atvinsc.atividade_codigo WHERE insc.cpf = ? and insc.ano = 2019'
             );
 
             $select->bindValue('1', $cpf);

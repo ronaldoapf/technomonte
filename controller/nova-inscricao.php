@@ -31,23 +31,33 @@
         
         $novaInscricao = new Inscricao($cpf, $ano, $nome, $endereco, $cidade, $estado, $celular, $whatsapp, $email, $data, $estudante, $instituicao, $credenciamento);
         $return = $novaInscricao->novaInscricao();
+		
+		if($return){
+			$presente = 'N';
 
-        $presente = 'N';
+			$salvarInscricaoAtividades = new Atividade_inscricao();
+			$salvarInscricaoAtividades->salvarAtividades($maratona, $minicurso, $workshop, $cpf, $ano, $presente);
 
-        $salvarInscricaoAtividades = new Atividade_inscricao();
-        $salvarInscricaoAtividades->salvarAtividades($maratona, $minicurso, $workshop, $cpf, $ano, $presente);
+			/*$fazerUpdateAtividades = new Atividade();
+			$return = $fazerUpdateAtividades->updateAtividade($maratona, $minicurso, $workshop);
 
-        /*$fazerUpdateAtividades = new Atividade();
-        $return = $fazerUpdateAtividades->updateAtividade($maratona, $minicurso, $workshop);
-
-        $_SESSION['json'] = json_decode($return);
-        */
-        
-        echo'
-            <script type="text/javascript">
-                alert("Inscrição realizada com sucesso!");
-                window.location="../view/inscricao.php";
-            </script>  
-        ';
-    }
+			$_SESSION['json'] = json_decode($return);
+			*/
+			
+			echo'
+				<script type="text/javascript">
+					alert("Inscrição realizada com sucesso!"'.$teste.');
+					window.location="../view/inscricao.php";
+				</script>  
+				';
+		}
+		else{
+			echo'
+					<script type="text/javascript">
+						alert("Falha na realização da inscrição! Possivelmente já existe uma inscrição com o CPF informado.");
+						window.location="../view/inscricao.php";
+					</script>  
+				';
+		}
+	}
 ?>

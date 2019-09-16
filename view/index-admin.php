@@ -90,17 +90,50 @@
                 <button type="submit" id="buttonClick" class="btn btn-primary w-100">Buscar</button>
             </div>
 
-           
+
         </div>
 
     </div>
 
     <script>
+    function habilitaInputs() {
+        $(".enable").prop("disabled", false);
+    }
+
+    function concluirAtualizacao(){
+        
+        var nome, cpf, email, endereco, cidade, estado, celular
+        nome = $("#nome").val();
+        console.log(nome);
+
+        var obj = new Object();
+
+        obj.nome = nome;
+        obj.cpf = $("#cpf").val();
+        obj.email = $("#email").val();
+        obj.endereco = $("#endereco").val();
+        obj.cidade = $("#cidade").val();
+        obj.estado = $("#estado").val();
+        obj.celular = $("#celular").val();
+        
+        var dados = JSON.stringify(obj);
+       
+        $.ajax({
+            type: 'POST',
+            url: '../controller/update-inscrito.php',
+            data:{dados},
+            headers:{
+                'Content-Type': 'application/json',
+            },
+            success: function(dados){
+                console.log(dados);
+            }
+        });
+        
+    }
 
     $("#buttonClick").click(function() {
-        $("#atualizar").click(function(){
-            $("enable").prop("disabled", true);
-         });
+
         $(".atualizar-dados").empty();
 
         var cpf = $("#cpf").val();
@@ -114,7 +147,7 @@
             str = '';
             atividades.filter(at => at.tipo === 'Minicursos').forEach(at => {
                 str += `      
-                    <option id="enable" name="${at.tipo} value="${at.codigo}" id="${at.codigo}" disabled="true">${at.nomeAtividade}</option>
+                    <option class="enable" id="enable" name="${at.tipo} value="${at.codigo}" id="${at.codigo}" disabled="true">${at.nomeAtividade}</option>
                 `;
             });
             return str;
@@ -123,7 +156,7 @@
             str = '';
             atividades.filter(at => at.tipo === 'Maratona').forEach(at => {
                 str += `      
-                    <option id="enable" name="${at.tipo} value="${at.codigo}" id="${at.codigo}" disabled="true">${at.nomeAtividade}</option>
+                    <option class="enable" name="${at.tipo} value="${at.codigo}" id="${at.codigo}" disabled="true">${at.nomeAtividade}</option>
                 `;
             });
             return str;
@@ -133,7 +166,7 @@
             str = '';
             atividades.filter(at => at.tipo === 'Workshops').forEach(at => {
                 str += `      
-                    <option id="enable" name="${at.tipo} value="${at.codigo}" id="${at.codigo}" disabled="true">${at.nomeAtividade}</option>
+                    <option class="enable" name="${at.tipo} value="${at.codigo}" id="${at.codigo}" disabled="true">${at.nomeAtividade}</option>
                 `;
             });
             return str;
@@ -159,89 +192,88 @@
                     
                     <div class="row">
                             <div class="col-12">
-                               <button id="ajuda" class="btn btn-primary">Atualizar</button>
+                               <button id="atualizar" class="btn btn-primary" onclick="habilitaInputs()">Atualizar</button>
                             </div>
 
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>Nome:</label>
-                                    <input type="text" class="form-control" value="${inscrito[0].nome}" id="enable" disabled="true">
+                                    <input name="nome" type="text" class="form-control enable" value="${inscrito[0].nome}" id="nome" disabled="true">
                                 </div>
                             </div>
 
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>CPF:</label>
-                                    <input type="text" class="form-control" value="${inscrito[0].cpf}" id="enable" disabled="true">
+                                    <input type="text" class="form-control enable" value="${inscrito[0].cpf}" id="cpf" disabled="true">
                                 </div>
                             </div>
 
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>Email:</label>
-                                    <input type="text" class="form-control" value="${inscrito[0].email}" id="enable" disabled="true">
+                                    <input type="text" class="form-control enable" value="${inscrito[0].email}" id="email" disabled="true">
                                 </div>
                             </div>
 
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>Endereço:</label>
-                                    <input type="text" class="form-control" value="${inscrito[0].endereco}" id="enable" disabled="true">
+                                    <input type="text" class="form-control enable" value="${inscrito[0].endereco}" id="endereco" disabled="true">
                                 </div>
                             </div>
 
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>Cidade:</label>
-                                    <input type="text" class="form-control" value="${inscrito[0].cidade}" id="enable" disabled="true">
+                                    <input type="text" class="form-control enable" value="${inscrito[0].cidade}" id="cidade" disabled="true">
                                 </div>
                             </div>
 
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>Estado:</label>
-                                    <input type="text" class="form-control" value="${inscrito[0].estado}" id="enable" disabled="true">
+                                    <input type="text" class="form-control enable" value="${inscrito[0].estado}" id="estado" disabled="true">
                                 </div>
                             </div>
 
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>Celular:</label>
-                                    <input type="text" class="form-control" value="${inscrito[0].celular}" id="enable" disabled="true">
+                                    <input type="text" class="form-control enable" value="${inscrito[0].celular}" id="celular" disabled="true">
                                 </div>
                             </div>
 
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="form-group">
-                                    <label>Cidade:</label>
-                                    <input type="text" class="form-control" value="${inscrito[0].cidade}" id="enable" disabled="true">
-                                </div>
-                            </div>
-
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label>Minicurso escolhido:<strong>${inscrito[0].nomeAtividade}</strong>.</label>
-                                    <select class="form-control">
+                                    <label>Minicurso escolhido:<strong> ${inscrito[0].nomeAtividade}</strong>.</label>
+                                    <select class="form-control enable" id="minicurso">
                                         ${getAtividades(atividades)}
                                     </select>
                                 </div>
                             </div>
 
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>Maratona escolhido: <strong>${inscrito[1].nomeAtividade}</strong></label>
-                                    <select class="form-control">
+                                    <select class="form-control enable" id="maratona">
                                         ${getMaratonas(atividades)}
                                     </select>
                                 </div>
                             </div>
 
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>Workshop escolhido: <strong>${inscrito[2].nomeAtividade}</strong></label>
-                                    <select class="form-control">
+                                    <select class="form-control enable" id="workshops">
                                         ${getWorkshops(atividades)}
                                     </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <button class="btn btn-primary enable w-100" disabled="true" onclick="concluirAtualizacao()" id="concluir-atualizacao">Concluir</button>
                                 </div>
                             </div>
                         </div>
@@ -249,9 +281,12 @@
                 );
             }
         });
+       
     });
     </script>
 
+   
+    
     <div class="atualizar-dados" id="atualizar-dados">
     </div>
 
