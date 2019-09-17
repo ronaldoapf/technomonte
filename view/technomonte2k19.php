@@ -665,9 +665,9 @@ em estudos e projetos recentes nas áreas de Ciência de Dados e Aprendizagem de
 			<div class="col-4 col-md-2 d-flex align-items-center">
 				<a target="_blank" href="https://www.sicoobaracoop.com.br"><img src="../assets/img/patrocinadores/aracoop.png" alt=""></a>
 			</div>
-			<div class="col-4 col-md-2 d-flex align-items-center">
-                <a></a>
-            </div>
+			<div class="col-4 col-md-2 d-flex align-items-center text-center">
+				<a><img src="../assets/img/patrocinadores/casiu.png" alt="" style="max-width: 90%;"></a>
+			</div>
 			<div class="col-4 col-md-2 d-flex align-items-center">
                 <a></a>
 			</div>

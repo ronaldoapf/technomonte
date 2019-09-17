@@ -21,8 +21,8 @@
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-blue">
-        <a class="navbar-brand" href="layout.html">
-            <img src="../assets/img/logoFundoEscuro.png" width="48" height="35" alt="Logo TECHNOMONTE">
+        <a class="navbar-brand" href="../index.php">
+            <img src="../assets/img/technomonte/logoFundoEscuro.png" width="48" height="35" alt="Logo TECHNOMONTE">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -36,19 +36,21 @@
                     <a class="nav-link" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="technomonte2k19.php" id="navbarDropdown"
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="technomonte2k19.php" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Evento
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="technomonte2k19.php">TECHNOMONTE 2K19</a>
-                        <a class="dropdown-item" href="#">Submissão de Trabalhos</a>
+                        <a class="dropdown-item" href="technomonte2k19.php">Atividades previstas</a>
+                        <a class="dropdown-item" href="organizacao.php">Organização</a>
+                        <!--<a class="dropdown-item" href="#">Patrocínio</a>-->
+                        <a class="dropdown-item" href="submissao.php">Submissão de Trabalhos</a>
                     </div>
                 </li>
-                <!--<li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="inscricao.php">Inscrição</a>
                 </li>
-                <li class="nav-item">-->
+                <li class="nav-item">
                     <a class="nav-link" href="programacao.php">Programação</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -60,7 +62,6 @@
                         <a class="dropdown-item" target="_blank" href="https://www.technomonte.com.br/2018">2018</a>
                     </div>
                 </li>
-
             </ul>
         </div>
     </nav>
@@ -120,24 +121,38 @@
 			<div class="col-4 col-md-2 d-flex align-items-center text-center">
                 <a target="_blank" href="https://www.alliancemonte.com"><img src="../assets/img/patrocinadores/alliance.png" alt="" style="max-width: 80%;"></a>
 			</div>
-			<div class="col-4 col-md-2 d-flex align-items-center text-center">
-				<a><img src="../assets/img/patrocinadores/ortodontic.png" alt="" style="max-width: 80%;"></a>
+            <div class="col-4 col-md-2 d-flex align-items-center">
+				<a target="_blank" href="https://www.sygmasistemas.com.br"><img src="../assets/img/patrocinadores/sygma.png" alt=""></a>
 			</div>
-            
 			<div class="col-md-3"></div>
         </div>
 	</div>
 	<div class="patrocinadores">
 		<div class="row" style="margin-left: 0;">
 			<div class="col-md-3"></div>
-			<div class="col-4 col-md-2 d-flex align-items-center">
-				<a target="_blank" href="https://www.sygmasistemas.com.br"><img src="../assets/img/patrocinadores/sygma.png" alt=""></a>
+			<div class="col-4 col-md-2 d-flex align-items-center text-center">
+				<a><img src="../assets/img/patrocinadores/ortodontic.png" alt=""></a>
 			</div>
 			<div class="col-4 col-md-2 d-flex align-items-center">
                 <a><img src="../assets/img/patrocinadores/monteccer.png" alt=""></a>
             </div>
 			<div class="col-4 col-md-2 d-flex align-items-center">
                 <a target="_blank" href="https://www.criartgrafica.com.br"><img src="../assets/img/patrocinadores/criart.png" alt=""></a>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+    </div>
+	<div class="patrocinadores">
+		<div class="row" style="margin-left: 0;">
+			<div class="col-md-3"></div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+				<a target="_blank" href="https://www.sicoobaracoop.com.br"><img src="../assets/img/patrocinadores/aracoop.png" alt=""></a>
+			</div>
+			<div class="col-4 col-md-2 d-flex align-items-center text-center">
+				<a><img src="../assets/img/patrocinadores/casiu.png" alt="" style="max-width: 90%;"></a>
+			</div>
+			<div class="col-4 col-md-2 d-flex align-items-center">
+                <a></a>
 			</div>
 			<div class="col-md-3"></div>
 		</div>

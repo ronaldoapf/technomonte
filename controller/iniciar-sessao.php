@@ -12,8 +12,6 @@
         $retorno = $iniciarSessao->verificarUsuarioExistente($usuario, $senha);
 
         if($retorno == 1) {
-            session_start();
-            $_SESSION['user'] = $retorno;
             echo'
             <script type="text/javascript">
                 alert("Login efetuado com sucesso!");
@@ -21,6 +19,8 @@
             </script>  
         ';
         }
+
+        else echo 'erro';
 
     }
 

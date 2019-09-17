@@ -163,7 +163,7 @@
             return $insert->execute();
         }
 
-        public function verificarIscricao($cpf){
+        public function verificarInscricao($cpf){
             $conn = new Connection();
 
             $select = $conn->getConn()->prepare(
@@ -181,6 +181,26 @@
                 $jsonInscrito = $select->fetchAll();
                 return $jsonInscrito;
             }
+        }
+
+        public function updateInscricao($nome, $cpf, $estado, $email, $endereco, $cidade, $celular, $instituicao){
+            $conn = new Connection();
+
+            $update = $conn->getConn()->prepare(
+                'UPDATE inscricao set nome = ?, estado = ?, email = ?, 
+                endereco = ?, cidade = ?, celular = ?, instituicao = ? WHERE cpf = ?'
+            );
+
+            $update->bindValue(1, $nome);
+            $update->bindValue(2, $estado);
+            $update->bindValue(3, $email);
+            $update->bindValue(4, $endereco);
+            $update->bindValue(5, $cidade);
+            $update->bindValue(6, $celular);
+            $update->bindValue(7, $instituicao);
+            $update->bindValue(8, $cpf);
+
+            $update->execute();
         }
 
     }

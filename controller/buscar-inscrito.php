@@ -2,22 +2,18 @@
 
 include '../model/Inscricao.php';
 include '../model/Atividade.php';
+include '../model/Pagamento.php';
 
     if(isset($_GET)){
-
-        //agora como eu vou usar isso lá?
-        // rapadura é doce mas ne mole n
-
-        
-        $cpf = $_GET['cpf'];
     
-        
+        $cpf = $_GET['cpf'];
+        $ano = '2019';
+    
         $verificarInscrito = new Inscricao();
         $atividade = new Atividade();
-
-
+        
         $return = $atividade->buscarAtividades();
-        $retorno = $verificarInscrito->verificarIscricao($cpf);
+        $retorno = $verificarInscrito->verificarInscricao($cpf);
 
         if($retorno != 'error' && $return !== 'error') {
             $data = new stdClass();

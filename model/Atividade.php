@@ -73,27 +73,30 @@
                 else return 'error';
         }
 
-        public function updateAtividade($maratona, $minicurso, $workshop){
+        public function buscarAtividadeByName($minicurso, $maratona, $workshops){
             $conn = new Connection();
 
             for($i=0; $i<3; $i++){
+                $codigos = [];
 
-                if($i == 0) $codigo = $maratona;
-
-                else if($i == 1) $codigo = $minicurso;
-
-                else $codigo = $workshop;
-
-                $update = $conn->getConn()->prepare(
-                    'UPDATE atividade SET vagasdisponiveis = vagasdisponiveis-1 where codigo = ?'
+                $select = $conn->getConn()->prepare(
+                    'SELECT codigo FROM atividade WHERE nomeAtividade = ?'
                 );
-                
-                $update->bindValue(1, $codigo);
 
-                $update->execute();
+                if($i == 0) $select->bindValue(1, $minicurso);
+
+                else if($i == 1) $select->bindValue(2, $maratona);
+
+                else $select->bindValue(3, $workshops);
+                
+                $select->execute();
+
+                $codigos[$i] = $select->fetch();
             }
 
+            return $codigos;
         }
+
     }
 
 ?>

@@ -142,12 +142,17 @@
                             <tr>
                                 <td><b>UFU Unidade Araras</b><br>Bloco 1AMC - 1º andar (do lado do elevador)</td>
                                 <td>16/09 a 18/09</td>
-                                <td>08:30 as 08:50; 10:40 as 11:00; 12:50 as 13:10; 14:50 as 15:10</td>
+                                <td>08h30 às 08h50; 10h40 às 11h00; 12h50 às 13h10; 14h50 às 15h10</td>
                             </tr>
                             <tr>
                                 <td><b>UFU Unidade Araras</b><br>Bloco 1AMC - 1º andar (do lado do elevador)</td>
                                 <td>23/09 a 27/09</td>
-                                <td>08:30 as 08:50; 10:40 as 11:00; 12:50 as 13:10; 14:50 as 15:10</td>
+                                <td>08h30 às 08h50; 10h40 às 11h00; 12h50 às 13h10; 14h50 às 15h10</td>
+                            </tr>
+							<tr>
+                                <td><b>UNIFUCAMP</b><br>Secretaria do Curso de Sistemas para Internet</td>
+                                <td>16/09 a 27/09</td>
+                                <td>18h30 às 22h</td>
                             </tr>
                         </tbody>
                     </table>
@@ -411,8 +416,8 @@
                 <a target="_blank" href="https://www.sicoobaracoop.com.br"><img
                         src="../assets/img/patrocinadores/aracoop.png" alt=""></a>
             </div>
-            <div class="col-4 col-md-2 d-flex align-items-center">
-                <a></a>
+            <div class="col-4 col-md-2 d-flex align-items-center text-center">
+                <a><img src="../assets/img/patrocinadores/casiu.png" alt="" style="max-width: 90%;"></a>
             </div>
             <div class="col-4 col-md-2 d-flex align-items-center">
                 <a></a>

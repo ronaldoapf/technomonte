@@ -19,7 +19,7 @@
 			$select->bindValue(2, $senha);
 
 			$retorno = $select->execute();
-
+			
 			if($retorno == 1) return $retorno;
 			
 			else return 'error';

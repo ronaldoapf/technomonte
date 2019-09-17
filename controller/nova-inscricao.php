@@ -7,6 +7,7 @@
     if(isset($_POST)){
         
         new DateTime("now", new DateTimeZone('America/Sao_Paulo'));
+        $data = date("Y-m-d H:i:s");
 
         $cpf = filter_input(INPUT_POST, "cpf", FILTER_SANITIZE_STRING);
         $ano = '2019';
@@ -17,7 +18,6 @@
         $celular = filter_input(INPUT_POST, "celular", FILTER_SANITIZE_STRING);
         $whatsapp = filter_input(INPUT_POST, "whatsapp", FILTER_SANITIZE_STRING);
         $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_STRING);
-        $data = date("Y-m-d H:i:s");
         $estudante = filter_input(INPUT_POST, "estudante", FILTER_SANITIZE_STRING);
         $instituicao = filter_input(INPUT_POST, "instituicao", FILTER_SANITIZE_STRING);
         $maratona = filter_input(INPUT_POST, "Maratona", FILTER_SANITIZE_STRING);

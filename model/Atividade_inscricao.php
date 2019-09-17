@@ -78,5 +78,23 @@
 				echo $insert->execute();
 			}
 		}
+
+		public function deletarAtividades($cpf, $ano){
+			$conn = new Connection();
+
+			$delete = $conn->getConn()->prepare(
+				'DELETE FROM atividade_inscricao WHERE inscricao_cpf = ? AND inscricao_ano = ?'
+			);
+
+			$delete->bindValue(1, $cpf);
+			$delete->bindValue(2, $ano);
+
+			$retorno = $delete->execute();
+
+			if($retorno == 1) return $retorno;
+
+			else return 'error';
+			
+		}
 	}
 ?>
