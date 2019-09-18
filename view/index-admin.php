@@ -75,8 +75,14 @@
 
     <div class="div-pagamento">
         <div class="row">
-            <div class="col-12">
-                <h4 style="padding: 40px 0;">Pagamento</h4>
+            <div style="margin-top: 20px;" class="col-12">
+                <h3 class="text-center">
+                    Bem vindo,
+                    <?php
+                        echo $_SESSION['user'];
+                    ?>
+                </h3>
+                <h4 style="margin-top: 20px;">Pagamento</h4>
             </div>
             <div class="col-12">
                 <div class="form-group">
@@ -132,7 +138,7 @@
             success: function(dados) {
                 console.log(dados);
 
-                if (dados == 1111) {
+                if (dados == '111') {
                     alert("Mudanças alteradas e pagamento efetuado com sucesso!");
                     window.location="../view/index-admin.php";
                 }
@@ -146,6 +152,21 @@
         $("#buttonClick").click(function() {
             $(".atualizar-dados").empty();
             cpf = $('#cpf').val();
+
+            $.ajax({
+                type: 'GET',
+                url: '../controller/verificar-pagamento.php',
+                data: {cpf},
+                success: function(dados){
+                    retorno = JSON.parse(dados);
+                    console.log(retorno);
+                    if(retorno == 'Pagamento realizado'){
+                        alert("Pagamento desta matricula já realizado!");
+                        window.location="../view/index-admin.php";
+                    }
+                }
+
+            });
 
             getAtividades = (atividades) => {
                 str = '';
@@ -183,123 +204,135 @@
                     cpf
                 },
                 success: function(dados) {
-                    if (dados === 'error') return;
+                    console.log(dados);
+                    JSON.parse(dados);
 
-                    dados = JSON.parse(dados);
-                    const {
-                        atividades,
-                        inscrito
-                    } = dados;
+                    console.log(dados);
 
-                    $("#atualizar-dados").append(
-                        `
-                            
-                            <div class="row">
-                                    <div class="col-12">
-                                        <button id="atualizar" class="btn btn-primary" onclick="habilitaInputs()">Atualizar</button>
-                                    </div>
+                    if (dados === '"error"'){
+                          alert("Não foi encontrado nenhuma inscrição com esse CPF!");
+                            window.location="../view/index-admin.php";                    
+                    }
+                    
+                    else{
+                    
+                        dados = JSON.parse(dados);
+                        const {
+                            atividades,
+                            inscrito
+                        } = dados;
 
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label>Nome:</label>
-                                            <input name="nome" type="text" class="form-control enable" value="${inscrito[0].nome}" id="nome" disabled="true">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label>CPF:</label>
-                                            <input type="text" class="mask-cpf form-control enable" value="${inscrito[0].cpf}" id="cpf" disabled="true">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label>Email:</label>
-                                            <input type="text" class="form-control enable" value="${inscrito[0].email}" id="email" disabled="true">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label>Endereço:</label>
-                                            <input type="text" class="form-control enable" value="${inscrito[0].endereco}" id="endereco" disabled="true">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label>Cidade:</label>
-                                            <input type="text" class="form-control enable" value="${inscrito[0].cidade}" id="cidade" disabled="true">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label>Estado:</label>
-                                            <input type="text" class="form-control enable" value="${inscrito[0].estado}" id="estado" disabled="true">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label>Celular:</label>
-                                            <input type="text" class="mask-telefone form-control enable" value="${inscrito[0].celular}" id="celular" disabled="true">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label>Nome da instituição/empresa:</label>
-                                            <input type="text" class="form-control enable" value="${inscrito[0].instituicao}" id="instituicao" disabled="true">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label>Minicurso escolhido:<strong> ${inscrito[0].nomeAtividade}</strong>.</label>
-                                            <select class="form-control enable" id="minicurso">
-                                                ${getAtividades(atividades)}
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label>Maratona escolhido: <strong>${inscrito[1].nomeAtividade}</strong></label>
-                                            <select class="form-control enable" id="maratona">
-                                                ${getMaratonas(atividades)}
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label>Workshop escolhido: <strong>${inscrito[2].nomeAtividade}</strong></label>
-                                            <select class="form-control enable" id="workshops">
-                                                ${getWorkshops(atividades)}
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <h4 style="text-center">Pagamento</h4>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label>Valor:</label>
-                                            <input class="form-control" type="text" id="valor">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <button class="btn btn-primary enable w-100" disabled="true" onclick="concluirAtualizacao()" id="concluir-atualizacao">Concluir</button>
-                                        </div>
-                                    </div>
-                                </div>
+                        $("#atualizar-dados").append(
                             `
-                    );
+                                
+                                <div class="row">
+                                        <div class="col-12">
+                                            <button id="atualizar" class="btn btn-primary" onclick="habilitaInputs()">Atualizar</button>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label>Nome:</label>
+                                                <input name="nome" type="text" class="form-control enable" value="${inscrito[0].nome}" id="nome" disabled="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label>CPF:</label>
+                                                <input type="text" class="mask-cpf form-control enable" value="${inscrito[0].cpf}" id="cpf" disabled="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label>Email:</label>
+                                                <input type="text" class="form-control enable" value="${inscrito[0].email}" id="email" disabled="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label>Endereço:</label>
+                                                <input type="text" class="form-control enable" value="${inscrito[0].endereco}" id="endereco" disabled="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label>Cidade:</label>
+                                                <input type="text" class="form-control enable" value="${inscrito[0].cidade}" id="cidade" disabled="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label>Estado:</label>
+                                                <input type="text" class="form-control enable" value="${inscrito[0].estado}" id="estado" disabled="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label>Celular:</label>
+                                                <input type="text" class="mask-telefone form-control enable" value="${inscrito[0].celular}" id="celular" disabled="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label>Nome da instituição/empresa:</label>
+                                                <input type="text" class="form-control enable" value="${inscrito[0].instituicao}" id="instituicao" disabled="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label>Minicurso escolhido:<strong> ${inscrito[0].nomeAtividade}</strong>.</label>
+                                                <select class="form-control enable" id="minicurso">
+                                                    ${getAtividades(atividades)}
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label>Maratona escolhido: <strong>${inscrito[1].nomeAtividade}</strong></label>
+                                                <select class="form-control enable" id="maratona">
+                                                    ${getMaratonas(atividades)}
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label>Workshop escolhido: <strong>${inscrito[2].nomeAtividade}</strong></label>
+                                                <select class="form-control enable" id="workshops">
+                                                    ${getWorkshops(atividades)}
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <h4 style="text-center">Pagamento</h4>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label>Valor:</label>
+                                                <input class="form-control" type="text" id="valor">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <button class="btn btn-primary enable w-100" disabled="true" onclick="concluirAtualizacao()" id="concluir-atualizacao">Concluir</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `
+                        );
+
+                    }
                 }
             });
         });
