@@ -97,9 +97,29 @@
             if($retorno == 1) return $retorno;
 
             else return 'ERROR';
-        
-
         }
+
+        public function verificarExistePagamentoRealizado($cpf, $ano){
+            $conn = new Connection();
+
+            $select = $conn->getConn()->prepare(
+                'SELECT * FROM pagamento WHERE inscricao_cpf = ? AND inscricao_ano = ?'
+            );
+
+            $select->bindValue(1, $cpf);
+            $select->bindValue(2, $ano);
+
+            $return = $select->execute();
+
+            if($return == 1){
+                if($select->rowCount() > 0) return 'Pagamento realizado';
+                
+                else return $return;
+            }
+
+            else return 'impossivel realizar consulta';
+        }
+
     }
 
 ?>
