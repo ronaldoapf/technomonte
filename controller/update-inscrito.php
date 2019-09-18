@@ -35,7 +35,7 @@
 
         //Update da inscrição
         $update = new Inscricao();
-        $returno = $update->updateInscricao($nome, $cpf, $estado, $email, $endereco, $cidade, $celular, $instituicao);
+        $returno = $update->updateInscricao($nome, $cpf, $estado, $email, $endereco, $cidade, $celular, $instituicao, $ano);
 
         //Inserir atividades_inscricao
         $insertAtividades = new Atividade_inscricao();
