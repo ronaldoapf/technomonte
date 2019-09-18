@@ -1,5 +1,4 @@
 <?php
-
     require_once('../model/Inscricao.php');
     require_once('../model/Atividade_inscricao.php');
     require_once('../model/Atividade.php');
@@ -9,6 +8,9 @@
     if(isset($_POST) && isset($_POST['d'])){
         new DateTime("now", new DateTimeZone('America/Sao_Paulo'));
         $dataPagto = date("Y-m-d H:i:s");
+
+        session_start();
+        $nomeUsuario = $_SESSION['user'];
         
         $ano = '2019';
         $presente = 'N';
@@ -40,10 +42,8 @@
         $retorno = $insertAtividades->salvarAtividades($minicurso, $maratona, $workshops, $cpf, $ano, $presente);
 
         $insertPagamento = new Pagamento();
-        $responsavel = 'Ronaldo';
         $notificado = 0;
 
-        $retorno = $insertPagamento->inserirPagamento($dataPagto, $valor, $responsavel, $notificado, $cpf, $ano);
-        echo $retorno;
+        $retorno = $insertPagamento->inserirPagamento($dataPagto, $valor, $nomeUsuario, $notificado, $cpf, $ano);
     }
 ?>
