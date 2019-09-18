@@ -178,9 +178,15 @@
             $retorno = $select->execute();
 
             if($retorno == 1){
-                $jsonInscrito = $select->fetchAll();
-                return $jsonInscrito;
+
+                if($select->rowCount() > 0){
+                    $jsonInscrito = $select->fetchAll();
+                    return $jsonInscrito;
+                }
+
+                else return 'error';
             }
+
         }
 
         public function updateInscricao($nome, $cpf, $estado, $email, $endereco, $cidade, $celular, $instituicao){
