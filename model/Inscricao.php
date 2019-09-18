@@ -189,12 +189,12 @@
 
         }
 
-        public function updateInscricao($nome, $cpf, $estado, $email, $endereco, $cidade, $celular, $instituicao){
+        public function updateInscricao($nome, $cpf, $estado, $email, $endereco, $cidade, $celular, $instituicao, $ano){
             $conn = new Connection();
 
             $update = $conn->getConn()->prepare(
                 'UPDATE inscricao set nome = ?, estado = ?, email = ?, 
-                endereco = ?, cidade = ?, celular = ?, instituicao = ? WHERE cpf = ?'
+                endereco = ?, cidade = ?, celular = ?, instituicao = ? WHERE cpf = ? AND ano = ?'
             );
 
             $update->bindValue(1, $nome);
@@ -205,6 +205,7 @@
             $update->bindValue(6, $celular);
             $update->bindValue(7, $instituicao);
             $update->bindValue(8, $cpf);
+            $update->bindValue(9, $ano);
 
             $update->execute();
         }
