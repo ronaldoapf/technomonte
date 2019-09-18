@@ -1,5 +1,6 @@
 <?php
 
+
 	require_once('Connection.php');
 
     class Usuario{
@@ -12,7 +13,7 @@
 			$conn = new Connection();
 
 			$select = $conn->getConn()->prepare(
-				'SELECT usuario, senha FROM usuario where usuario = ? AND senha = ?'
+				'SELECT nome, usuario, senha FROM usuario where usuario = ? AND senha = ?'
 			);
 
 			$select->bindValue(1, $usuario);
@@ -20,10 +21,14 @@
 
 			$retorno = $select->execute();
 			
-			if($retorno == 1) return $retorno;
-			
-			else return 'error';
 
+			if($retorno == 1) {
+				
+				if($select->rowCount() > 0) return $select->fetchAll();
+
+				else return 'error';
+
+			}
 		}
 	}
 ?>
