@@ -11,16 +11,28 @@
         
         $retorno = $iniciarSessao->verificarUsuarioExistente($usuario, $senha);
 
-        if($retorno == 1) {
-            echo'
+        if($retorno != 'error') {
+           echo'
             <script type="text/javascript">
                 alert("Login efetuado com sucesso!");
                 window.location="../view/index-admin.php";
             </script>  
         ';
+        
+            session_start();
+            $_SESSION['user'] = json_encode($retorno);
+            $json = json_decode($_SESSION['user']);
+            foreach($json as $usuario){
+                $nome = $usuario->usuario;
+            }
+            $_SESSION['user'] = $nome;
         }
 
-        else echo 'erro';
+       else echo '
+        <script type="text/javascript">
+            alert("Usuário não encontrado!");
+            window.location="../view/login.php";
+        </script>';
 
     }
 
