@@ -12,15 +12,29 @@ include '../model/Pagamento.php';
         $verificarInscrito = new Inscricao();
         $atividade = new Atividade();
         
-        $return = $atividade->buscarAtividades();
         $retorno = $verificarInscrito->verificarInscricao($cpf);
+        
+        if($retorno == 'error') {
+            echo json_encode($retorno);
+            
+        }
 
-        if($retorno != 'error' && $return !== 'error') {
+        else {
+            $return = $atividade->buscarAtividades();
             $data = new stdClass();
             $data->atividades = $return;
             $data->inscrito = $retorno;
             echo json_encode($data);
         }
+
+        /*if($retorno != 'error' && $return !== 'error') {
+            $data = new stdClass();
+            $data->atividades = $return;
+            $data->inscrito = $retorno;
+            echo json_encode($data);
+        }
+
+        else return 'error';*/
     }
 
 ?>
