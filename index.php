@@ -49,6 +49,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="view/technomonte2k19.php">Atividades previstas</a>
+                        <a class="dropdown-item" href="view/campeonato-jogos.php">Campeonato de Jogos</a>
                         <!--<a class="dropdown-item" target="_blank" href="../2018">Edições Anteriores</a>-->
                         <a class="dropdown-item" href="view/organizacao.php">Organização</a>
                         <!--<a class="dropdown-item" href="#">Patrocínio</a>-->

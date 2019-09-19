@@ -47,6 +47,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="technomonte2k19.php">Atividades previstas</a>
+                        <a class="dropdown-item" href="campeonato-jogos.php">Campeonato de Jogos</a>
                         <a class="dropdown-item" href="organizacao.php">Organização</a>
                         <!--<a class="dropdown-item" href="#">Patrocínio</a>-->
                         <a class="dropdown-item" href="submissao.php">Submissão de Trabalhos</a>
@@ -163,46 +164,6 @@
     </div>
 
     <div class="container">
-        <!--    <div class="div-maratonas">
-            <div class="center">
-                <h2>Maratonas de Programação</h2>
-            </div>
-            <div class="center">
-                <div class="row">
-                    <div class="col-12">
-                        <img src="../assets/img/technomonte/programacao.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="center">
-                        <div class="text">
-                            <h5>Maratona de Programação</h5>
-                            <p>
-                                Aquecimento: 03/10, 08h00 às 08h45 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
-                                Competição: 03/10, 09h00 às 12h00 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)<br>
-                                Aguarde mais informações!
-                            </p> 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="center">
-                        <div class="text">
-                            <h5>Maratona de Programação - Jovens Programadores</h5>
-                            <p>
-                                Aquecimento: 03/10, 07h15 às 08h15 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)
-                                Competição: 03/10, 08h20 às 10h20 - Laboratórios BSI-UFU (Bloco 1B, 1º andar)<br>
-                                Aguarde mais informações!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-
         <center>
             <h1 style="margin-bottom: 20px;">Eventos Importantes</h1>
         </center>

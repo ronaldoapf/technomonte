@@ -26,9 +26,9 @@
     function gtag() {
         dataLayer.push(arguments);
     }
-    gtag('js', new Date());
+        gtag('js', new Date());
 
-    gtag('config', 'UA-147513386-1');
+        gtag('config', 'UA-147513386-1');
     </script>
 
 </head>
@@ -56,6 +56,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="technomonte2k19.php">Atividades previstas</a>
+                        <a class="dropdown-item" href="campeonato-jogos.php">Campeonato de Jogos</a>
                         <a class="dropdown-item" href="organizacao.php">Organização</a>
                         <!--<a class="dropdown-item" href="#">Patrocínio</a>-->
                         <a class="dropdown-item" href="submissao.php">Submissão de Trabalhos</a>
@@ -114,6 +115,7 @@
             <h6><i>* A realização da inscrição não é garantia de vaga para os Minicursos, Workshops ou Campeonatos. As
                     vagas serão preenchidas por ordem de pagamento e os participantes receberão um e-mail de confirmação
                     na atividade.</i></h6>
+            <h6><i>* A inscrição para os jogos está sendo realizada atráves de um formulário. Para mais informações, acesse a <a target="_blank" href="campeonato-jogos.php">página</a>.</i></h6>
         </div>
         <br>
         <h3 class="text-center" style="margin-bottom: 40px;">Locais e horários de pagamento</h3>
@@ -286,6 +288,7 @@
                             type: 'GET',
                             url: '../controller/buscar-atividades.php',
                             success: function(dados) {
+                                var contMinicursos = 0;
                                 let innerHtml = '';
                                 let treatedData = JSON.parse(dados);
                                 const minicursos = treatedData.filter( d => d.tipo === 'Minicursos');
@@ -308,12 +311,27 @@
                                     `;
                                     data.forEach(d => {
                                         const {codigo, nomeAtividade, vagasdisponiveis, tipo} = d;
+
                                         if(vagasdisponiveis > 0){
-                                            innerHtml += `
-                                            <li class="list-group-item">
-                                                <input type="radio" name="${tipo}" value="${codigo}" id="${codigo}"> ${nomeAtividade}
-                                            </li>
-                                            `;
+                                            console.log(contMinicursos);
+                                            cont = 0;
+                                            if(contMinicursos == 0 || contMinicursos == 5 || contMinicursos == 8){
+                                                innerHtml += `
+                                                    <li class="list-group-item">
+                                                        <input type="radio" checked name="${tipo}" value="${codigo}" id="${codigo}"> ${nomeAtividade}
+                                                    </li>
+                                                `;    
+                                            }
+
+                                            else{
+
+                                                innerHtml += `
+                                                    <li class="list-group-item">
+                                                        <input type="radio" name="${tipo}" value="${codigo}" id="${codigo}"> ${nomeAtividade}
+                                                    </li>
+                                                `;
+                                            }
+                                                contMinicursos++;
                                         }
                                     });
                                     innerHtml += 
