@@ -23,13 +23,13 @@
         $maratona = filter_input(INPUT_POST, "Maratona", FILTER_SANITIZE_STRING);
         $minicurso = filter_input(INPUT_POST, "Minicursos", FILTER_SANITIZE_STRING);
         $workshop = filter_input(INPUT_POST, "Workshops", FILTER_SANITIZE_STRING);
-
+        $tamanhoCamiseta = filter_input(INPUT_POST, "camiseta", FILTER_SANITIZE_STRING);
         
         $credenciamento = 'N';
 
         // $cpf, $ano, $nome, $endereco, $cidade, $estado, $celular, $whatsapp, $email, $data, $estudante, $instituicao, $credenciamento
         
-        $novaInscricao = new Inscricao($cpf, $ano, $nome, $endereco, $cidade, $estado, $celular, $whatsapp, $email, $data, $estudante, $instituicao, $credenciamento);
+        $novaInscricao = new Inscricao($cpf, $ano, $nome, $endereco, $cidade, $estado, $celular, $whatsapp, $email, $data, $estudante, $instituicao, $credenciamento, $tamanhoCamiseta);
         $return = $novaInscricao->novaInscricao();
 		
 		if($return){

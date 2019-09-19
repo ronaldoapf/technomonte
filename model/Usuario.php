@@ -13,7 +13,7 @@
 			$conn = new Connection();
 
 			$select = $conn->getConn()->prepare(
-				'SELECT nome, usuario, senha FROM usuario where usuario = ? AND senha = ?'
+				'SELECT nome, usuario, senha FROM usuario where usuario = ? AND senha = MD5(?)'
 			);
 
 			$select->bindValue(1, $usuario);

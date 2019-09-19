@@ -15,9 +15,10 @@
         private $data; // ok
         private $estudante; // ok 
         private $instituicao; // ok
-        private $crendenciamento; 
+        private $crendenciamento; //ok
+        private $tamanhoCamiseta;
 
-        public function __construct($cpf="", $ano="", $nome="", $endereco="", $cidade="", $estado="", $celular="", $whatsapp="", $email="", $data="", $estudante="", $instituicao="", $crendenciamento=""){
+        public function __construct($cpf="", $ano="", $nome="", $endereco="", $cidade="", $estado="", $celular="", $whatsapp="", $email="", $data="", $estudante="", $instituicao="", $crendenciamento="", $tamanhoCamiseta=""){
             $this->cpf = $cpf;
             $this->ano = $ano;
             $this->nome = $nome;
@@ -31,6 +32,7 @@
             $this->estudante = $estudante;
             $this->instituicao = $instituicao;
             $this->credenciamento = $crendenciamento;
+            $this->tamanhoCamiseta = $tamanhoCamiseta;
         }
 
         public function getCpf(){
@@ -143,7 +145,7 @@
 
             $insert = $conn->getConn()->prepare(
                 "INSERT INTO inscricao (cpf, ano, nome, endereco, cidade, estado, 
-                celular, whatsapp, email, data, estudante, instituicao, credenciamento) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+                celular, whatsapp, email, data, estudante, instituicao, credenciamento, tamanhoCamiseta) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
             );
 
             $insert->bindValue(1, $this->cpf);
@@ -159,6 +161,8 @@
             $insert->bindValue(11, $this->estudante);
             $insert->bindValue(12, $this->instituicao);
             $insert->bindValue(13, $this->credenciamento);
+            $insert->bindValue(14, $this->tamanhoCamiseta);
+
             
             return $insert->execute();
         }
@@ -189,12 +193,12 @@
 
         }
 
-        public function updateInscricao($nome, $cpf, $estado, $email, $endereco, $cidade, $celular, $instituicao, $ano){
+        public function updateInscricao($nome, $cpf, $estado, $email, $endereco, $cidade, $celular, $instituicao, $ano, $tamanhoCamiseta){
             $conn = new Connection();
 
             $update = $conn->getConn()->prepare(
                 'UPDATE inscricao set nome = ?, estado = ?, email = ?, 
-                endereco = ?, cidade = ?, celular = ?, instituicao = ? WHERE cpf = ? AND ano = ?'
+                endereco = ?, cidade = ?, celular = ?, instituicao = ?, tamanhoCamiseta = ? WHERE cpf = ? AND ano = ?'
             );
 
             $update->bindValue(1, $nome);
@@ -204,9 +208,9 @@
             $update->bindValue(5, $cidade);
             $update->bindValue(6, $celular);
             $update->bindValue(7, $instituicao);
-            $update->bindValue(8, $cpf);
-            $update->bindValue(9, $ano);
-
+            $update->bindValue(8, $tamanhoCamiseta);
+            $update->bindValue(9, $cpf);
+            $update->bindValue(10, $ano);
             $update->execute();
         }
 

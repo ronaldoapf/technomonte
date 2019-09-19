@@ -28,6 +28,7 @@
         $workshops = $form['workshops'];
         $instituicao = $form['instituicao'];
         $valor = $form['valor'];
+        $tamanhoCamiseta = $form['camiseta'];
 
         //Deletando as atividades
         $deleteAtividade = new Atividade_inscricao();
@@ -35,7 +36,7 @@
 
         //Update da inscrição
         $update = new Inscricao();
-        $returno = $update->updateInscricao($nome, $cpf, $estado, $email, $endereco, $cidade, $celular, $instituicao, $ano);
+        $returno = $update->updateInscricao($nome, $cpf, $estado, $email, $endereco, $cidade, $celular, $instituicao, $ano, $tamanhoCamiseta);
 
         //Inserir atividades_inscricao
         $insertAtividades = new Atividade_inscricao();

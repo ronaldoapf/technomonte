@@ -80,7 +80,7 @@
                 <h3 class="text-center">
                     Bem vindo,
                     <?php
-                        echo $_SESSION['user'];
+                        echo $_SESSION['userName'];
                     ?>
                 </h3>
                 <h4 style="margin-top: 20px;">Pagamento</h4>
@@ -127,6 +127,7 @@
         obj.maratona = $("#maratona").val();
         obj.instituicao = $("#instituicao").val();
         obj.valor = $("#valor").val();
+        obj.camiseta = $("#camiseta").val();
 
 
         $.ajax({
@@ -168,7 +169,7 @@
                 }
 
             });
-
+            
             getAtividades = (atividades) => {
                 str = '';
                 atividades.filter(at => at.tipo === 'Minicursos').forEach(at => {
@@ -271,17 +272,29 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label>Celular:</label>
                                                 <input type="text" class="mask-telefone form-control enable" value="${inscrito[0].celular}" id="celular" disabled="true">
                                             </div>
                                         </div>
 
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label>Nome da instituição/empresa:</label>
                                                 <input type="text" class="form-control enable" value="${inscrito[0].instituicao}" id="instituicao" disabled="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="form-group">
+                                                <label>Tamanho da camiseta escolhida: <strong>${inscrito[0].tamanhoCamiseta}</strong></label>
+                                                <select class="form-control enable" id="camiseta" disabled="true">
+                                                    <option valuee="P">P</option>
+                                                    <option value="M">M</option>
+                                                    <option value="G">G</option>
+                                                    <option value="GG">GG</option>
+                                                </select>
                                             </div>
                                         </div>
 

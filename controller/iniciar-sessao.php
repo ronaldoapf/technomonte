@@ -24,8 +24,10 @@
             $json = json_decode($_SESSION['user']);
             foreach($json as $usuario){
                 $nome = $usuario->usuario;
+                $nomeReal = $usuario->nome;
             }
             $_SESSION['user'] = $nome;
+            $_SESSION['userName'] = $nomeReal;
         }
 
        else echo '

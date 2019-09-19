@@ -250,7 +250,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-4">
                         <div class="form-group">
                             <label>Este número possui WhatsApp?</label><br>
                             <input type="radio" name="whatsapp" value="S"> Sim<br>
@@ -258,11 +258,22 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-4">
                         <div class="form-group">
                             <label>Você é estudante?</label><br>
                             <input type="radio" name="estudante" value="S"> Sim<br>
                             <input type="radio" name="estudante" value="N"> Não<br>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label>Tamanho da camiseta:</label>
+                            <select class="form-control" name="camiseta">
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                                <option value="GG">GG</option>
+                            </select>
                         </div>
                     </div>
 
@@ -315,7 +326,7 @@
                                         if(vagasdisponiveis > 0){
                                             console.log(contMinicursos);
                                             cont = 0;
-                                            if(contMinicursos == 0 || contMinicursos == 5 || contMinicursos == 8){
+                                            if(contMinicursos == 4 || contMinicursos == 6 || contMinicursos == 9){
                                                 innerHtml += `
                                                     <li class="list-group-item">
                                                         <input type="radio" checked name="${tipo}" value="${codigo}" id="${codigo}"> ${nomeAtividade}
