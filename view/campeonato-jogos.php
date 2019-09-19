@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>SUBMISSÃO DE TRABALHOS - TECHNOMONTE 2K19</title>
+    <title>CAMPEONATO DE JOGOS - TECHNOMONTE 2K19</title>
     <link rel="shortcut icon" href="../assets/img/technomonte/logo_ico.ico"> <!-- Icon -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -95,7 +95,7 @@
                         <ul>
                             <li>Aconteceram dispustas de dois jogos: <strong>Fifa 18</strong> e <strong>League of
                                     Legends.</strong></li>
-                            <li>As seletivas acontecerá nos dia <strong>21/09</strong> e <strong>28/09</strong> na
+                            <li>As seletivas acontecerá no dia <strong>28/09</strong> na
                                 <strong>UNIFUCAMP</strong> a partir das 13:00 horas.</li>
                             <li>Caso queira, levar periféricos para utilização no dia da competição.</li>
                             <li>Para participar, é necessário ter feito <a href="inscricao.php">inscrição</a> no evento
